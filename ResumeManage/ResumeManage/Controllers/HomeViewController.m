@@ -13,7 +13,6 @@
 @end
 
 
-
 @implementation HomeViewController
 
 - (void)viewDidLoad
@@ -21,26 +20,21 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self    action:@selector(backgroundTap:)];
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self    action:@selector(backgroundTap)];
     tapGestureRecognizer.numberOfTapsRequired = 1;
     [self.view addGestureRecognizer: tapGestureRecognizer];
     [tapGestureRecognizer setCancelsTouchesInView:NO];
     
-    
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-    //self.navigationController.navigationBar.translucent = YES;
     self.title = @"个人信息";
     NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:
                                 [UIColor whiteColor],
                                 NSForegroundColorAttributeName, nil];
     [self.navigationController.navigationBar setTitleTextAttributes:attributes];
-
     
-    _homeScrollView.frame =CGRectMake(0, 0, 320, self.view.frame.size.height);
+    _homeScrollView.frame = CGRectMake(0, 0, 320, self.view.frame.size.height);
     _homeScrollView.backgroundColor = [UIColor clearColor];
     _homeScrollView.delegate = self;
-    [_homeScrollView flashScrollIndicators];
-    _homeScrollView.directionalLockEnabled = YES;
     [self.view addSubview:_homeScrollView];
     
    _avatarImageView.backgroundColor = [UIColor colorWithRed:34/255.f green:201/255.f blue:252/255.f alpha:1.0f];
@@ -48,7 +42,6 @@
     UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onClickImageView)];
     [_avatarImageView addGestureRecognizer:singleTap];
     
-
     [_nameTextField setBorderStyle:UITextBorderStyleLine];
     _nameTextField.placeholder = @"姓 名";
     _nameTextField.delegate = self;
@@ -58,7 +51,6 @@
     _nameTextField.leftViewMode = UITextFieldViewModeAlways;
     _nameTextField.layer.borderWidth = 1.0f;
     _nameTextField.layer.borderColor = [[UIColor colorWithRed:214/255.f green:214/255.f blue:214/255.f alpha:1.0f] CGColor];
-    
     
     [_ageTextField setBorderStyle:UITextBorderStyleLine];
     _ageTextField.placeholder = @"年 龄";
@@ -93,7 +85,7 @@
     UIToolbar * topView = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
     [topView setBarStyle:UIBarStyleDefault];
     UIBarButtonItem * btnSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
-    UIBarButtonItem * doneButton = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(backgroundTap:)];
+    UIBarButtonItem * doneButton = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(backgroundTap)];
     
     NSArray * buttonsArray = [NSArray arrayWithObjects:btnSpace, doneButton, nil];
     [topView setItems:buttonsArray];
@@ -101,21 +93,19 @@
     [_ageTextField setInputAccessoryView:topView];
     [_phoneTextField setInputAccessoryView:topView];
     [_emailTextField setInputAccessoryView:topView];
-    
-    //键盘出现通知事件
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidShow:)name:UIKeyboardWillShowNotification object:nil];
-    
-    //键盘消失通知事件
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidHide:)name:UIKeyboardWillHideNotification object:nil];
+
  }
 
+
 //关闭键盘
-- (void)backgroundTap:(id)sender {
+- (void)backgroundTap{
     
     [_nameTextField resignFirstResponder];
     [_ageTextField resignFirstResponder];
     [_phoneTextField resignFirstResponder];
     [_emailTextField resignFirstResponder];
+    
+    [_homeScrollView setContentOffset:CGPointMake(0, -65) animated:YES];
     
 }
 
@@ -124,10 +114,10 @@
     
     switch (textField.tag) {
         case 1:
-            [_homeScrollView setContentOffset:CGPointMake(0, 80) animated:YES];
+            [_homeScrollView setContentOffset:CGPointMake(0, 10) animated:YES];
             break;
         case 2:
-            [_homeScrollView setContentOffset:CGPointMake(0, 125) animated:YES];
+            [_homeScrollView setContentOffset:CGPointMake(0, 100) animated:YES];
             break;
         case 3:
             [_homeScrollView setContentOffset:CGPointMake(0, 170) animated:YES];
@@ -142,18 +132,11 @@
     
 }
 
-//键盘隐藏后处理scrollview的高度，使其还原为本来的高度
--(void)keyboardDidHide:(NSNotification*)notice{
-    
-    [_homeScrollView setContentOffset:CGPointMake(0, 0) animated:YES];
-    
-}
-
 // 使用自动布局 ScrollView的ContentSize 会被重置和屏幕一样， 此方法进行解决
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [_homeScrollView setContentSize:CGSizeMake(320, self.view.frame.size.height)];
+    [_homeScrollView setContentSize:CGSizeMake(320, self.view.frame.size.height+100)];
 }
 
 // 调用相机

@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EGORefreshTableHeaderView.h"
 
 @interface HomeViewController : UIViewController<UIScrollViewDelegate,UITextFieldDelegate,UIActionSheetDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+
 
 @property (strong, nonatomic)IBOutlet UIScrollView *homeScrollView;
 
@@ -20,6 +22,7 @@
 @property (strong, nonatomic)IBOutlet UITextField *emailTextField;
 @property (strong, nonatomic)IBOutlet UIButton *savePersonInfoAndNextButton;
 
-
+-(void)reloadData;
+-(void)doneLoading;
 
 @end

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0F894E4C-95F5-4B1B-94D1-612FC75A3BCF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ResumeManage</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F0655371-515D-4DB2-BCD3-2EB00A79C817</key>
+		<string>https://github.com/zzlmilk/ResumeApps.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ResumeManage/ResumeManage.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F0655371-515D-4DB2-BCD3-2EB00A79C817</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/zzlmilk/ResumeApps.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F0655371-515D-4DB2-BCD3-2EB00A79C817</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F0655371-515D-4DB2-BCD3-2EB00A79C817</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ResumeApps</string>
+		</dict>
+	</array>
+</dict>
+</plist>
