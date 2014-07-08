@@ -1,13 +1,13 @@
 //
-//  Test.m
+//  UniversityViewController.h
 //  ResumeManage
 //
 //  Created by 单好坤 on 14-7-8.
 //  Copyright (c) 2014年 单好坤. All rights reserved.
 //
 
-#import "Test.h"
+#import <UIKit/UIKit.h>
 
-@implementation Test
+@interface UniversityViewController : UIViewController
 
 @end

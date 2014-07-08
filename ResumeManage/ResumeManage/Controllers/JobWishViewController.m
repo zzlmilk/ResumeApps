@@ -7,12 +7,10 @@
 //
 
 #import "JobWishViewController.h"
-#import "HomeViewController.h"
 
 @interface JobWishViewController ()
 
 @end
-
 
 @implementation JobWishViewController
 
