@@ -137,8 +137,6 @@
 		DF239C30195915B600ECB3D5 /* ResumeManage */ = {
 			isa = PBXGroup;
 			children = (
-				DFC14DB9196A91DF00305F33 /* Model */,
-				DFC14DB1196A705A00305F33 /* Views */,
 				DFC14DA2196A4AD600305F33 /* Controllers */,
 				DFD52C371963F1C9001F1DF3 /* ThreeParty */,
 				DF239C39195915B600ECB3D5 /* HomeAppDelegate.h */,
@@ -188,20 +186,6 @@
 				DFC14DA4196A4AFC00305F33 /* JobWishViewController.m */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		DFC14DB1196A705A00305F33 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		DFC14DB9196A91DF00305F33 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		DFD52C371963F1C9001F1DF3 /* ThreeParty */ = {
