@@ -6,8 +6,9 @@
 //  Copyright (c) 2014年 单好坤. All rights reserved.
 //
 
+#import "IntroControll.h"
 #import <UIKit/UIKit.h>
 
-@interface UniversityViewController : UIViewController
+@interface LeadPageViewController : UIViewController<UITextFieldDelegate>
 
 @end

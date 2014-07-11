@@ -79,7 +79,7 @@
     [_jobStatusTextField setBorderStyle:UITextBorderStyleLine];
     _jobStatusTextField.placeholder = @"求职状态";
     _jobStatusTextField.delegate = self;
-    _jobStatusTextField.tag = 3;
+    _jobStatusTextField.tag = 4;
     UIView *jobStatusPaddingView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 15, 40)];
     _jobStatusTextField.leftView =jobStatusPaddingView;
     _jobStatusTextField.leftViewMode = UITextFieldViewModeAlways;
@@ -100,7 +100,7 @@
     
 }
 
-
+//隐藏键盘
 -(void)keyboardHide{
     
     [_jobKindTextField resignFirstResponder];
@@ -108,6 +108,7 @@
     [_wishMoneyTextField resignFirstResponder];
     [_jobStatusTextField resignFirstResponder];
     
+    [_jobWishScrollView setContentOffset:CGPointMake(0, 0) animated:YES];
 }
 
 // 使用自动布局 ScrollView的ContentSize 会被重置和屏幕一样， 此方法进行解决
@@ -116,6 +117,23 @@
     [super viewDidAppear:animated];
     [_jobWishScrollView setContentSize:CGSizeMake(320, self.view.frame.size.height+100)];
 }
+
+// UITextField 得到焦点 视图滚动避免键盘遮挡
+- (void)textFieldDidBeginEditing:(UITextField *)textField{
+    
+    switch (textField.tag) {
+        case 3:
+            [_jobWishScrollView setContentOffset:CGPointMake(0, 80) animated:YES];
+            break;
+        case 4:
+            [_jobWishScrollView setContentOffset:CGPointMake(0, 110) animated:YES];
+            break;
+            
+        default:
+            break;
+    }
+}
+
 
 - (void)didReceiveMemoryWarning
 {

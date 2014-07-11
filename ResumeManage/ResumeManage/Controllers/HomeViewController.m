@@ -105,7 +105,7 @@
     [_phoneTextField resignFirstResponder];
     [_emailTextField resignFirstResponder];
     
-    [_homeScrollView setContentOffset:CGPointMake(0, -65) animated:YES];
+    [_homeScrollView setContentOffset:CGPointMake(0, 0) animated:YES];
     
 }
 

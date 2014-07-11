@@ -1,20 +1,20 @@
 //
-//  UniversityViewController.m
+//  ListSectionViewController.m
 //  ResumeManage
 //
-//  Created by 单好坤 on 14-7-8.
+//  Created by 单好坤 on 14-7-10.
 //  Copyright (c) 2014年 单好坤. All rights reserved.
 //
 
-#import "UniversityViewController.h"
+#import "ListSectionViewController.h"
 
-@interface UniversityViewController ()
+@interface ListSectionViewController ()
 
 @end
 
-@implementation UniversityViewController
+@implementation ListSectionViewController
 
-- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
@@ -27,6 +27,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
+    self.view.backgroundColor = [UIColor yellowColor];
 }
 
 - (void)didReceiveMemoryWarning
