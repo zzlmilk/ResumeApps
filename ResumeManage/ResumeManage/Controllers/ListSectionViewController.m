@@ -10,7 +10,12 @@
 
 @interface ListSectionViewController ()
 
+@property (strong, nonatomic)  UIImageView *expandZoomImageView;
+
 @end
+
+static CGFloat kImageOriginHight = 240.f;
+
 
 @implementation ListSectionViewController
 
@@ -23,14 +28,79 @@
     return self;
 }
 
+
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
     
-    self.view.backgroundColor = [UIColor yellowColor];
+    
+    tableView = ({
+        UITableView *_tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _tableView.delegate =self;
+        _tableView.dataSource=self;
+        
+        _tableView.contentInset = UIEdgeInsetsMake(kImageOriginHight, 0, 0, 0);
+        
+        _expandZoomImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"testBg"]];
+        _expandZoomImageView.frame = CGRectMake(0, 0, 320, kImageOriginHight);
+        [_tableView addSubview:_expandZoomImageView];
+        _tableView;
+    });
+    
+    [self.view addSubview:tableView];
+    
 }
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    self.expandZoomImageView.frame = CGRectMake(0, -kImageOriginHight, tableView.frame.size.width, kImageOriginHight);
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    CGFloat yOffset  = scrollView.contentOffset.y;
+    if (yOffset < -kImageOriginHight) {
+        CGRect f = self.expandZoomImageView.frame;
+        f.origin.y = yOffset;
+        f.size.height =  -yOffset;
+        self.expandZoomImageView.frame = f;
+    }
+}
+
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 7;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)ATableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+       static  NSString *cellId = @"ListSectionCellId";
+    UITableViewCell *cell = [ATableView dequeueReusableCellWithIdentifier:cellId];
+    
+    if (!cell) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+    }
+    
+    cell.textLabel.text  = @"填写xx内容";
+    return cell;
+    
+}
+
+
+#pragma mark --tableView Delegate
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    
+    
+
+}
+
+
 
 - (void)didReceiveMemoryWarning
 {

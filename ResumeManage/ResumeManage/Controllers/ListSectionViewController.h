@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ListSectionViewController : UIViewController
+@interface ListSectionViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+{
+    UITableView *tableView;
+}
 
 @end
