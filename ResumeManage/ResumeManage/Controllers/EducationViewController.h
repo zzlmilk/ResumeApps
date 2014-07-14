@@ -19,4 +19,6 @@
 
 @property (strong, nonatomic)IBOutlet UIButton *saveEducationAndNextButton;
 
+@property (strong, nonatomic)IBOutlet UIButton *backButton;
+
 @end

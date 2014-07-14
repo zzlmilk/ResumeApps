@@ -71,10 +71,9 @@
     [secondView addSubview:secondLabel];
     
     IntroModel *model2 = [[IntroModel alloc] initWithTitle:nil description:nil image:@"image2" view:secondView];
+
     
-    
-    
-    
+
     UIView *threeView = [[UIView alloc]init];
     threeView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     //threeView.backgroundColor = [UIColor colorWithRed:10/255.f green:10/255.f blue:10/255.f alpha:0.2f];
@@ -112,6 +111,7 @@
     UIButton *joinButton=[UIButton buttonWithType:UIButtonTypeRoundedRect];
     joinButton.frame = CGRectMake(115,self.view.frame.size.height-90 , 90, 40);
     [joinButton setTitle:@"立即加入" forState:UIControlStateNormal];
+    [joinButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     joinButton.titleLabel.font = [UIFont boldSystemFontOfSize: 16.0];
     joinButton.backgroundColor = [UIColor colorWithRed:27/255.f green:161/255.f blue:218/255.f alpha:1.0f];
     joinButton.titleLabel.textColor = [UIColor whiteColor];
@@ -129,10 +129,6 @@
     }];
     
 }
-
-
-
-
 
 - (void)didReceiveMemoryWarning
 {

@@ -7,9 +7,13 @@
 //
 
 #import "ListSectionViewController.h"
-#import "ListTableViewCell.h"
 #import "Resume.h"
 
+
+#import "HomeViewController.h"
+#import "JobWishViewController.h"
+#import "EducationViewController.h"
+#import "ListTableViewCell.h"
 
 @interface ListSectionViewController ()
 
@@ -51,8 +55,6 @@ static CGFloat kImageOriginHight = 240.f;
     }
     return self;
 }
-
-
 
 
 - (void)viewDidLoad
@@ -107,7 +109,6 @@ static CGFloat kImageOriginHight = 240.f;
 }
 
 
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return resumeAttributes.count;
 }
@@ -120,6 +121,10 @@ static CGFloat kImageOriginHight = 240.f;
     if (!cell) {
         cell = [[ListTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
     }
+
+
+    
+
     
     NSString * att = [resumeAttributes objectAtIndex:indexPath.row];
     
@@ -128,6 +133,7 @@ static CGFloat kImageOriginHight = 240.f;
      [cell setResume:[self resumeData] WithResumeAttribute:[att intValue]];
     
    // cell.textLabel.text  = @"填写xx内容";
+
     return cell;
     
 }
@@ -140,9 +146,40 @@ static CGFloat kImageOriginHight = 240.f;
 
 #pragma mark --tableView Delegate
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    
-    
+        switch (indexPath.row) {
+        case 0:
+        {
+            HomeViewController *homeVC = [self.storyboard instantiateViewControllerWithIdentifier:@"homeViewController"];
+            
+            [self presentViewController:homeVC animated:YES completion:^{
+                
+            }];
+        }
+            break;
+        case 1:
+        {
+            JobWishViewController *jobWishVC = [self.storyboard instantiateViewControllerWithIdentifier:@"jobWishViewController"];
+            
+            [self presentViewController:jobWishVC animated:YES completion:^{
+                
+            }];
+        }
+            break;
+        case 2:
+        {
+            EducationViewController *educationVC = [self.storyboard instantiateViewControllerWithIdentifier:@"educationViewController"];
+            
+            [self presentViewController:educationVC animated:YES completion:^{
+                
+            }];
+        }
+            break;
+            
+        default:
+            break;
+    }
+
+
 }
 
 

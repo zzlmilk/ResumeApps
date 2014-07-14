@@ -48,7 +48,6 @@
         
         
         
-        
         //Initial PageView
         pageControl = [[UIPageControl alloc] init];
         pageControl.numberOfPages = pagesArray.count;

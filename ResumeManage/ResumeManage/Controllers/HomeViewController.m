@@ -37,6 +37,9 @@
     _homeScrollView.delegate = self;
     [self.view addSubview:_homeScrollView];
     
+    _backButton.backgroundColor = [UIColor clearColor];
+    [_backButton addTarget:self action:@selector(backTopView) forControlEvents:UIControlEventTouchUpInside];
+    
    _avatarImageView.backgroundColor = [UIColor colorWithRed:34/255.f green:201/255.f blue:252/255.f alpha:1.0f];
     _avatarImageView.userInteractionEnabled = YES;
     UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onClickImageView)];
@@ -97,6 +100,14 @@
 
  }
 
+//返回上一视图
+-(void)backTopView{
+
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+
+}
 
 //关闭键盘
 - (void)backgroundTap{
