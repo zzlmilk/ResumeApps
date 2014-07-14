@@ -21,11 +21,22 @@
 
 #import <Foundation/Foundation.h>
 #import "Personal.h"
+#import "Objective.h"
+
+
+typedef enum{
+    PersonalAttribute = 0,
+    ObjectiveAttribute =1,
+    
+}resumeAttribute;
+
+
 
 
 @interface Resume : NSObject
 
-@property(nonatomic,strong)Personal *personal;
+@property(nonatomic,strong) Personal *personal;
+@property(nonatomic,strong) Objective *objective;
 
 
 @end

@@ -31,6 +31,8 @@ static CGFloat kImageOriginHight = 240.f;
     r.personal.cellPhone = @"15901794453";
     r.personal.email = @"zzlmilk@gmail.com";
     
+    
+       
     return r;
 }
 
@@ -40,6 +42,12 @@ static CGFloat kImageOriginHight = 240.f;
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        
+        
+        
+        
+        
+        
     }
     return self;
 }
@@ -51,6 +59,19 @@ static CGFloat kImageOriginHight = 240.f;
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    resumeAttributes = [NSMutableArray array];
+    [resumeAttributes  addObject:@"0"];
+    
+    [resumeAttributes  addObject:@"1"];
+    
+    
+    
+    
+    
+   
+    
+
     
     tableView = ({
         UITableView *_tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
@@ -88,7 +109,7 @@ static CGFloat kImageOriginHight = 240.f;
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 7;
+    return resumeAttributes.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)ATableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -100,8 +121,11 @@ static CGFloat kImageOriginHight = 240.f;
         cell = [[ListTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
     }
     
-    cell.resume = [self resumeData];
+    NSString * att = [resumeAttributes objectAtIndex:indexPath.row];
     
+    
+                                 
+     [cell setResume:[self resumeData] WithResumeAttribute:[att intValue]];
     
    // cell.textLabel.text  = @"填写xx内容";
     return cell;

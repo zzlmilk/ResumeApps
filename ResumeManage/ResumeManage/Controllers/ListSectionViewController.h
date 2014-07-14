@@ -11,6 +11,7 @@
 @interface ListSectionViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView *tableView;
+    NSMutableArray *resumeAttributes;
 }
 
 @end

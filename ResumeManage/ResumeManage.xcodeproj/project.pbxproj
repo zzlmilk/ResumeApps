@@ -11,6 +11,7 @@
 		040BBFA41973B54200F285CA /* Resume.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFA31973B54200F285CA /* Resume.m */; };
 		040BBFAA1973B6DD00F285CA /* Personal.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFA91973B6DD00F285CA /* Personal.m */; };
 		040BBFAD1973B95400F285CA /* Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFAC1973B95400F285CA /* Base.m */; };
+		040BBFB01973BEC700F285CA /* Objective.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFAF1973BEC700F285CA /* Objective.m */; };
 		DF239C2B195915B600ECB3D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF239C2A195915B600ECB3D5 /* Foundation.framework */; };
 		DF239C2D195915B600ECB3D5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF239C2C195915B600ECB3D5 /* CoreGraphics.framework */; };
 		DF239C2F195915B600ECB3D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF239C2E195915B600ECB3D5 /* UIKit.framework */; };
@@ -73,6 +74,8 @@
 		040BBFA91973B6DD00F285CA /* Personal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Personal.m; sourceTree = "<group>"; };
 		040BBFAB1973B95400F285CA /* Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base.h; sourceTree = "<group>"; };
 		040BBFAC1973B95400F285CA /* Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base.m; sourceTree = "<group>"; };
+		040BBFAE1973BEC700F285CA /* Objective.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Objective.h; sourceTree = "<group>"; };
+		040BBFAF1973BEC700F285CA /* Objective.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Objective.m; sourceTree = "<group>"; };
 		DF239C27195915B600ECB3D5 /* ResumeManage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResumeManage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF239C2A195915B600ECB3D5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DF239C2C195915B600ECB3D5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -268,6 +271,8 @@
 				040BBFA91973B6DD00F285CA /* Personal.m */,
 				040BBFAB1973B95400F285CA /* Base.h */,
 				040BBFAC1973B95400F285CA /* Base.m */,
+				040BBFAE1973BEC700F285CA /* Objective.h */,
+				040BBFAF1973BEC700F285CA /* Objective.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -473,6 +478,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFD05B13196E43C600BD8F44 /* SuggestionsList.m in Sources */,
+				040BBFB01973BEC700F285CA /* Objective.m in Sources */,
 				DF239C37195915B600ECB3D5 /* main.m in Sources */,
 				DF940313196BA2AD00411FB9 /* EGORefreshTableFootView.m in Sources */,
 				DF9402FF196B92E200411FB9 /* Test.m in Sources */,

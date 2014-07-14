@@ -35,7 +35,7 @@
         
         descriptionLabel.frame = CGRectMake((self.frame.size.width-s.width)/2, titleLabel.frame.origin.y+titleLabel.frame.size.height+4,s.width, MIN(s.height, three.height));
         
-        NSLog(@"%f", s.height);
+       // NSLog(@"%f", s.height);
         
         
         

@@ -36,31 +36,45 @@
     label.shadowOffset =CGSizeMake(0.1, 0.7f);
     label.shadowColor =  [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.7];
     
-    
 
-    label.text =@"0";
+    label.text =number;
     [view addSubview:label];
     return view;
 }
 
--(UIColor *)randomColor{
-    
-    defaultColor = [UIColor purpleColor];
-    return defaultColor;
-    
-}
 
--(void)setResume:(Resume *)resume{
-    if (resume) {
-        [circleView removeFromSuperview];
-        circleView =[self circleViewNumber:resume.personal.number WithColor:resume.personal.color];
-        [self.contentView addSubview:circleView];
+
+-(void)setResume:(Resume *)resume WithResumeAttribute:(resumeAttribute)attribute{
     
-        titleLabel.text = resume.personal.title;
-        titleLabel.textColor = resume.personal.color;
+       
+    if (resume ) {
+        switch (attribute) {
+            case PersonalAttribute:
+                _title = resume.personal.title;
+                _description = resume.personal.description;
+                _color = resume.personal.color;
+                _number = resume.personal.number;
+                _isComplete = resume.personal.isComplete;
+                break;
+            case ObjectiveAttribute:
+                _title = resume.objective.title;
+                _description = resume.objective.description;
+                _color = resume.objective.color;
+                _number = resume.objective.number;
+                _isComplete = resume.objective.isComplete;
+
+            default:
+                break;
+        }
         
-        if ([resume.personal isComplete]) {
-            circleView.backgroundColor = resume.personal.color;
+        
+        [circleView removeFromSuperview];
+        circleView =[self circleViewNumber:_number WithColor:_color];
+        [self.contentView addSubview:circleView];
+        titleLabel.text = _title;
+        titleLabel.textColor = _color;
+        if (_isComplete) {
+            circleView.backgroundColor = _color;
             titleLabel.textColor = [UIColor whiteColor];
         }
 
@@ -77,27 +91,21 @@
         
         
         
-        [self randomColor];
         self.contentView.backgroundColor = [UIColor whiteColor];
         
-       
-        circleView = [self circleViewNumber:@"1" WithColor:defaultColor];
+        circleView = [self circleViewNumber:@"1" WithColor:nil];
         [self.contentView addSubview:circleView];
         
         titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(kMargin*2+circleView.frame.size.width, kMargin, 200, 30)];
-        titleLabel.textColor  =defaultColor;
         
-
         titleLabel.shadowOffset =CGSizeMake(0, 0.7f);
         titleLabel.shadowColor =  [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.7];
         
         
-        titleLabel.text = @"个人信息";
+//        titleLabel.text = @"";
         [self.contentView addSubview:titleLabel];
         
        
-        
-        
     }
     return self;
 }

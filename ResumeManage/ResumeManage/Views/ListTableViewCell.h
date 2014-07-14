@@ -16,16 +16,24 @@
     UILabel *titleLabel;
     
     
-    UIColor *defaultColor ;
-   
     
+    
+ 
 }
+
+
+@property(nonatomic,strong) NSString *title;
+@property (nonatomic,strong) NSString *description;
+@property(nonatomic,strong) NSString *number;
+@property(nonatomic,strong) UIColor *color;
+@property                   BOOL  isComplete;
+
 
 
 @property(nonatomic,strong)Resume *resume;
 
+-(void)setResume:(Resume *)resume WithResumeAttribute:(resumeAttribute)attribute;
 
--(UIColor *)randomColor;
 
 
 
