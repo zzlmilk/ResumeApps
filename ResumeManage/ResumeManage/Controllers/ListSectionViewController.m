@@ -129,7 +129,6 @@ static CGFloat kImageOriginHight = 240.f;
     NSString * att = [resumeAttributes objectAtIndex:indexPath.row];
     
     
-                                 
      [cell setResume:[self resumeData] WithResumeAttribute:[att intValue]];
     
    // cell.textLabel.text  = @"填写xx内容";
