@@ -1,5 +1,6 @@
 #import <Foundation/Foundation.h>
 
+
 @interface IntroModel : NSObject
 
 @property (nonatomic, strong) UIView *view;

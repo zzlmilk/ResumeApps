@@ -15,6 +15,7 @@
         titleText = title;
         descriptionText = desc;
         image = [UIImage imageNamed:imageText];
+//        image = [UIImage mn_imageWithColor:[UIColor yellowColor]];
         view = introView;
         
     }
