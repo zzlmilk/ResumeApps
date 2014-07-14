@@ -7,6 +7,9 @@
 //
 
 #import "ListSectionViewController.h"
+#import "ListTableViewCell.h"
+#import "Resume.h"
+
 
 @interface ListSectionViewController ()
 
@@ -18,6 +21,19 @@ static CGFloat kImageOriginHight = 240.f;
 
 
 @implementation ListSectionViewController
+
+-(Resume *)resumeData{
+    Resume *r = [[Resume alloc]init];
+    
+    r.personal.name = @"周大仙";
+    r.personal.birthday = @"2000年9月22日";
+    r.personal.gender = male;
+    r.personal.cellPhone = @"15901794453";
+    r.personal.email = @"zzlmilk@gmail.com";
+    
+    return r;
+}
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,8 +51,6 @@ static CGFloat kImageOriginHight = 240.f;
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    
     
     tableView = ({
         UITableView *_tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
@@ -80,15 +94,23 @@ static CGFloat kImageOriginHight = 240.f;
 - (UITableViewCell *)tableView:(UITableView *)ATableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
        static  NSString *cellId = @"ListSectionCellId";
-    UITableViewCell *cell = [ATableView dequeueReusableCellWithIdentifier:cellId];
+    ListTableViewCell *cell = [ATableView dequeueReusableCellWithIdentifier:cellId];
     
     if (!cell) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+        cell = [[ListTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
     }
     
-    cell.textLabel.text  = @"填写xx内容";
+    cell.resume = [self resumeData];
+    
+    
+   // cell.textLabel.text  = @"填写xx内容";
     return cell;
     
+}
+
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return  100;
 }
 
 
@@ -97,7 +119,6 @@ static CGFloat kImageOriginHight = 240.f;
     
     
     
-
 }
 
 

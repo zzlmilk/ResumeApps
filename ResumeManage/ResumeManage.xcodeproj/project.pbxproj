@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040BBFA11973A97100F285CA /* ListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFA01973A97100F285CA /* ListTableViewCell.m */; };
+		040BBFA41973B54200F285CA /* Resume.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFA31973B54200F285CA /* Resume.m */; };
+		040BBFAA1973B6DD00F285CA /* Personal.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFA91973B6DD00F285CA /* Personal.m */; };
+		040BBFAD1973B95400F285CA /* Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFAC1973B95400F285CA /* Base.m */; };
 		DF239C2B195915B600ECB3D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF239C2A195915B600ECB3D5 /* Foundation.framework */; };
 		DF239C2D195915B600ECB3D5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF239C2C195915B600ECB3D5 /* CoreGraphics.framework */; };
 		DF239C2F195915B600ECB3D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF239C2E195915B600ECB3D5 /* UIKit.framework */; };
@@ -61,6 +65,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		040BBF9F1973A97100F285CA /* ListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewCell.h; sourceTree = "<group>"; };
+		040BBFA01973A97100F285CA /* ListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewCell.m; sourceTree = "<group>"; };
+		040BBFA21973B54200F285CA /* Resume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Resume.h; path = ../Views/Resume.h; sourceTree = "<group>"; };
+		040BBFA31973B54200F285CA /* Resume.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Resume.m; path = ../Views/Resume.m; sourceTree = "<group>"; };
+		040BBFA81973B6DD00F285CA /* Personal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Personal.h; sourceTree = "<group>"; };
+		040BBFA91973B6DD00F285CA /* Personal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Personal.m; sourceTree = "<group>"; };
+		040BBFAB1973B95400F285CA /* Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base.h; sourceTree = "<group>"; };
+		040BBFAC1973B95400F285CA /* Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base.m; sourceTree = "<group>"; };
 		DF239C27195915B600ECB3D5 /* ResumeManage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResumeManage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF239C2A195915B600ECB3D5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DF239C2C195915B600ECB3D5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -248,8 +260,14 @@
 		DF9402F8196B91E800411FB9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				040BBFA21973B54200F285CA /* Resume.h */,
+				040BBFA31973B54200F285CA /* Resume.m */,
 				DF94031E196BA4D100411FB9 /* ModelTest.h */,
 				DF94031F196BA4D100411FB9 /* ModelTest.m */,
+				040BBFA81973B6DD00F285CA /* Personal.h */,
+				040BBFA91973B6DD00F285CA /* Personal.m */,
+				040BBFAB1973B95400F285CA /* Base.h */,
+				040BBFAC1973B95400F285CA /* Base.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -259,6 +277,8 @@
 			children = (
 				DF9402FD196B92E200411FB9 /* Test.h */,
 				DF9402FE196B92E200411FB9 /* Test.m */,
+				040BBF9F1973A97100F285CA /* ListTableViewCell.h */,
+				040BBFA01973A97100F285CA /* ListTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -461,13 +481,17 @@
 				DFD05B16196E9B7F00BD8F44 /* SchoolMajorViewController.m in Sources */,
 				DF80F53C196CEE3D0023FCA6 /* CPKenburnsView.m in Sources */,
 				DF239C3B195915B600ECB3D5 /* HomeAppDelegate.m in Sources */,
+				040BBFA11973A97100F285CA /* ListTableViewCell.m in Sources */,
 				DF80F551196D34F90023FCA6 /* IntroControll.m in Sources */,
 				DF940323196BA54400411FB9 /* LeadPageViewController.m in Sources */,
 				DFD05B19196EA67D00BD8F44 /* ListSectionViewController.m in Sources */,
+				040BBFAA1973B6DD00F285CA /* Personal.m in Sources */,
 				DF80F541196D140A0023FCA6 /* EducationViewController.m in Sources */,
 				DFC14DA8196A4B2400305F33 /* HomeViewController.m in Sources */,
+				040BBFA41973B54200F285CA /* Resume.m in Sources */,
 				DF80F552196D34F90023FCA6 /* IntroModel.m in Sources */,
 				DF940320196BA4D100411FB9 /* ModelTest.m in Sources */,
+				040BBFAD1973B95400F285CA /* Base.m in Sources */,
 				DF80F553196D34F90023FCA6 /* IntroView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

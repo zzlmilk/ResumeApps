@@ -62,6 +62,7 @@
     _ageTextField.layer.borderWidth = 1.0f;
     _ageTextField.layer.borderColor = [[UIColor colorWithRed:214/255.f green:214/255.f blue:214/255.f alpha:1.0f] CGColor];
     
+    
     [_phoneTextField setBorderStyle:UITextBorderStyleLine];
     _phoneTextField.placeholder = @"手 机";
     _phoneTextField.delegate = self;
