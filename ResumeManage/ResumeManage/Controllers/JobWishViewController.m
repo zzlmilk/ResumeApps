@@ -46,6 +46,9 @@
     [self.view addSubview:_jobWishScrollView];
     
     
+    [_backButton addTarget:self action:@selector(backTopView) forControlEvents:UIControlEventTouchUpInside];
+    
+    
     [_jobKindTextField setBorderStyle:UITextBorderStyleLine];
     _jobKindTextField.placeholder = @"工作性质";
     _jobKindTextField.delegate = self;
@@ -97,6 +100,14 @@
     [_jobNameTextField setInputAccessoryView:topView];
     [_wishMoneyTextField setInputAccessoryView:topView];
     [_jobStatusTextField setInputAccessoryView:topView];
+}
+
+//返回上一视图
+-(void)backTopView{
+    
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
     
 }
 

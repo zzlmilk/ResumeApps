@@ -7,7 +7,7 @@
         <!--Home View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="HomeViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeViewController" id="vXZ-lx-hvc" customClass="HomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="amG-ge-K5i"/>
                         <viewControllerLayoutGuide type="bottom" id="xyq-xg-nk8"/>
@@ -54,13 +54,16 @@
                                         <rect key="frame" x="10" y="480" width="300" height="45"/>
                                         <color key="backgroundColor" red="0.35194013604534236" green="0.37706996350255922" blue="0.63202700407608692" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                        <state key="normal" title="保存并继续">
+                                        <state key="normal" title="保存">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="71G-hK-VZc" kind="push" id="Ie0-EO-v1w"/>
-                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="amd-BJ-GbC">
+                                        <rect key="frame" x="20" y="41" width="40" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="返 回"/>
                                     </button>
                                 </subviews>
                             </scrollView>
@@ -71,6 +74,7 @@
                     <connections>
                         <outlet property="ageTextField" destination="Swo-8P-Sxq" id="5CT-1a-hX6"/>
                         <outlet property="avatarImageView" destination="1bD-xU-ZqV" id="zcQ-PL-JAp"/>
+                        <outlet property="backButton" destination="amd-BJ-GbC" id="A0g-x0-jHg"/>
                         <outlet property="emailTextField" destination="U6B-2i-shu" id="i9P-5l-wX4"/>
                         <outlet property="genderSegmentedControl" destination="0Ej-4l-PZL" id="h8K-f1-VHv"/>
                         <outlet property="homeScrollView" destination="MTp-jq-2ZU" id="f88-wX-PT4"/>
@@ -81,12 +85,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="384" y="76"/>
+            <point key="canvasLocation" x="260" y="-904"/>
         </scene>
         <!--Job Wish View Controller-->
         <scene sceneID="WKd-1Q-UoE">
             <objects>
-                <viewController id="71G-hK-VZc" customClass="JobWishViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="jobWishViewController" id="71G-hK-VZc" customClass="JobWishViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Uh6-z1-PMB"/>
                         <viewControllerLayoutGuide type="bottom" id="pna-f4-TON"/>
@@ -122,13 +126,18 @@
                                         <rect key="frame" x="11" y="448" width="300" height="45"/>
                                         <color key="backgroundColor" red="0.35194013600000001" green="0.37706996349999999" blue="0.63202700410000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                        <state key="normal" title="保存并继续">
+                                        <state key="normal" title="保存">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="EkF-6l-4ay" kind="push" id="OHW-am-z0G"/>
-                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bq4-ym-2sR">
+                                        <rect key="frame" x="20" y="40" width="54" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="返 回">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                     </button>
                                 </subviews>
                             </scrollView>
@@ -137,6 +146,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="1lE-OK-up7"/>
                     <connections>
+                        <outlet property="backButton" destination="Bq4-ym-2sR" id="j8c-iG-phc"/>
                         <outlet property="jobKindTextField" destination="6hY-oQ-gg4" id="2Ha-Q1-e0P"/>
                         <outlet property="jobNameTextField" destination="DNO-q2-tpD" id="2sc-qM-6BL"/>
                         <outlet property="jobStatusTextField" destination="I3e-0T-lzZ" id="Kux-bJ-LIa"/>
@@ -147,7 +157,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VIg-1w-5yL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="758" y="76"/>
+            <point key="canvasLocation" x="634" y="-904"/>
         </scene>
         <!--School Major View Controller-->
         <scene sceneID="cFd-r3-D4L">
@@ -194,7 +204,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5EM-EH-N5O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1160" y="-613"/>
+            <point key="canvasLocation" x="1036" y="-1593"/>
         </scene>
         <!--List Section View Controller-->
         <scene sceneID="EyS-93-a5C">
@@ -213,12 +223,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e6l-gs-gMe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1541" y="-613"/>
+            <point key="canvasLocation" x="1417" y="-1593"/>
         </scene>
         <!--Education View Controller-->
         <scene sceneID="JSu-xV-7Zo">
             <objects>
-                <viewController id="EkF-6l-4ay" customClass="EducationViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="educationViewController" id="EkF-6l-4ay" customClass="EducationViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2fW-oM-569"/>
                         <viewControllerLayoutGuide type="bottom" id="nvX-3A-VAq"/>
@@ -234,7 +244,7 @@
                                         <rect key="frame" x="11" y="447" width="300" height="45"/>
                                         <color key="backgroundColor" red="0.35194013600000001" green="0.37706996349999999" blue="0.63202700410000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                        <state key="normal" title="保存并继续">
+                                        <state key="normal" title="保存">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -259,6 +269,14 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MM4-9N-N7e">
+                                        <rect key="frame" x="20" y="37" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="返 回">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -266,6 +284,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="OYH-dD-fh0"/>
                     <connections>
+                        <outlet property="backButton" destination="MM4-9N-N7e" id="Td5-7X-oq3"/>
                         <outlet property="degreeTextField" destination="RzV-sT-9fH" id="d8g-Dr-O0C"/>
                         <outlet property="educationScrollView" destination="TEy-a0-MvE" id="WTB-C9-9lo"/>
                         <outlet property="graduateTimeTextField" destination="HOi-52-nuB" id="OqH-VF-UMa"/>
@@ -276,7 +295,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a5q-ed-bc6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1136" y="76"/>
+            <point key="canvasLocation" x="1012" y="-904"/>
         </scene>
         <!--Lead Page View Controller-->
         <scene sceneID="nAE-ot-WcD">
@@ -295,25 +314,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0qF-lX-lZv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3" y="-564"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="mft-7I-GXG">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wc4-ZK-XGw" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GRE-uB-OX9">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="2mn-id-SMN"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="o1i-pa-Hh0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3" y="76"/>
+            <point key="canvasLocation" x="-117" y="-904"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

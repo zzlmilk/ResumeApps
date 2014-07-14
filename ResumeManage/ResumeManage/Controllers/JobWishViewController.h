@@ -19,4 +19,6 @@
 
 @property (strong, nonatomic)IBOutlet UIButton *saveJobwishAndNextButton;
 
+@property (strong, nonatomic)IBOutlet UIButton *backButton;
+
 @end

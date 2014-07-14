@@ -7,6 +7,9 @@
 //
 
 #import "ListSectionViewController.h"
+#import "HomeViewController.h"
+#import "JobWishViewController.h"
+#import "EducationViewController.h"
 
 @interface ListSectionViewController ()
 
@@ -27,8 +30,6 @@ static CGFloat kImageOriginHight = 240.f;
     }
     return self;
 }
-
-
 
 
 - (void)viewDidLoad
@@ -72,7 +73,6 @@ static CGFloat kImageOriginHight = 240.f;
 }
 
 
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 7;
 }
@@ -85,8 +85,24 @@ static CGFloat kImageOriginHight = 240.f;
     if (!cell) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
     }
+
+    switch (indexPath.row) {
+        case 0:
+            cell.textLabel.text  = @"个人信息";
+            break;
+        case 1:
+            cell.textLabel.text  = @"求职意向";
+            break;
+        case 2:
+            cell.textLabel.text  = @"教育背景";
+            break;
+            
+        default:
+            break;
+    }
     
-    cell.textLabel.text  = @"填写xx内容";
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
     return cell;
     
 }
@@ -95,8 +111,39 @@ static CGFloat kImageOriginHight = 240.f;
 #pragma mark --tableView Delegate
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    
-    
+    switch (indexPath.row) {
+        case 0:
+        {
+            HomeViewController *homeVC = [self.storyboard instantiateViewControllerWithIdentifier:@"homeViewController"];
+            
+            [self presentViewController:homeVC animated:YES completion:^{
+                
+            }];
+        }
+            break;
+        case 1:
+        {
+            JobWishViewController *jobWishVC = [self.storyboard instantiateViewControllerWithIdentifier:@"jobWishViewController"];
+            
+            [self presentViewController:jobWishVC animated:YES completion:^{
+                
+            }];
+        }
+            break;
+        case 2:
+        {
+            EducationViewController *educationVC = [self.storyboard instantiateViewControllerWithIdentifier:@"educationViewController"];
+            
+            [self presentViewController:educationVC animated:YES completion:^{
+                
+            }];
+        }
+            break;
+            
+        default:
+            break;
+    }
+
 
 }
 
