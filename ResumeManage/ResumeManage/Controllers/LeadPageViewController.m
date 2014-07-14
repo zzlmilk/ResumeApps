@@ -105,7 +105,7 @@
 
     
     self.view = [[IntroControll alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) pages:@[model1, model2, model3,model4]];
-    self.view.backgroundColor = [UIColor redColor];
+    //self.view.backgroundColor = [UIColor redColor];
     
     
     UIButton *joinButton=[UIButton buttonWithType:UIButtonTypeRoundedRect];
