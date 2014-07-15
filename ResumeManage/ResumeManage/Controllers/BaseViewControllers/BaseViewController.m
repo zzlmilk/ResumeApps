@@ -8,7 +8,6 @@
 
 #import "BaseViewController.h"
 
-
 @interface BaseViewController ()
 
 @end
@@ -21,9 +20,12 @@
     [self.view insertSubview:backgroundImageView atIndex:0];
 }
 
+
+
 - (void)pushNewViewController:(UIViewController *)newViewController {
     [self.navigationController pushViewController:newViewController animated:YES];
 }
+
 
 #pragma mark - Life cycle
 

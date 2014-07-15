@@ -8,7 +8,9 @@
 
 #import "IntroControll.h"
 #import <UIKit/UIKit.h>
+#import "GuideView.h"
 
-@interface LeadPageViewController : UIViewController<UITextFieldDelegate>
+
+@interface LeadPageViewController : UIViewController<UITextFieldDelegate,GuideViewDelegate>
 
 @end

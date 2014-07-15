@@ -21,13 +21,15 @@
 
 @end
 
-static CGFloat kImageOriginHight = 240.f;
+static CGFloat kImageOriginHight = 300.f;
 
 
 @implementation ListSectionViewController
 
 -(Resume *)resumeData{
     Resume *r = [[Resume alloc]init];
+    
+    
     
     r.personal.name = @"周大仙";
     r.personal.birthday = @"2000年9月22日";
