@@ -41,6 +41,7 @@
 
 +(UIColor *)r_black{
     return [UIColor colorWithRed:27/255.f green:175/255.f blue:32/255.f alpha:1.f];
+    
 }
 
 

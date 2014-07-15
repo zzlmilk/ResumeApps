@@ -14,13 +14,13 @@
 +(UIColor *)randomRColor;
 
 
-//绿色
+//棕色
 +(UIColor *)r_green;
 
 //蓝色
 +(UIColor *)r_blue;
 
-//黑色
+//绿色
 +(UIColor *)r_black;
 
 @end

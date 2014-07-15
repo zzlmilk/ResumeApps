@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface ListSectionViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@interface ListSectionViewController : BaseViewController<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView *tableView;
     NSMutableArray *resumeAttributes;

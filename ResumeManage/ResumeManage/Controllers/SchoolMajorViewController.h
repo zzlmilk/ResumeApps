@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface SchoolMajorViewController : UIViewController<UITextFieldDelegate>
+
+@interface SchoolMajorViewController : BaseViewController<UITextFieldDelegate>
 
 @property (strong, nonatomic)IBOutlet UITextField *schoolTextField;//学校
 @property (strong, nonatomic)IBOutlet UITextField *majorTextField;//专业
