@@ -26,7 +26,7 @@
     view.layer.masksToBounds = YES;
 
     
-    UILabel *label  = [[UILabel alloc]initWithFrame:CGRectZero];
+     label  = [[UILabel alloc]initWithFrame:CGRectZero];
     label.frame = view.bounds;
     //label.center = view.center;
     label.textAlignment = NSTextAlignmentCenter;
@@ -76,6 +76,8 @@
         }
         
         
+        
+        
         [circleView removeFromSuperview];
         circleView =[self circleViewNumber:_number WithColor:_color];
         [self.contentView addSubview:circleView];
@@ -83,7 +85,8 @@
         titleLabel.textColor = _color;
         if (_isComplete) {
             circleView.backgroundColor = _color;
-            titleLabel.textColor = [UIColor whiteColor];
+            label.textColor = [UIColor whiteColor];
+            
         }
 
     }

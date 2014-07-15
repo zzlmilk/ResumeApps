@@ -16,7 +16,7 @@
     UILabel *titleLabel;
     
     
-    
+    UILabel *label; //number
     
  
 }

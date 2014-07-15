@@ -12,6 +12,9 @@
 		040BBFAA1973B6DD00F285CA /* Personal.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFA91973B6DD00F285CA /* Personal.m */; };
 		040BBFAD1973B95400F285CA /* Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFAC1973B95400F285CA /* Base.m */; };
 		040BBFB01973BEC700F285CA /* Objective.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFAF1973BEC700F285CA /* Objective.m */; };
+		040BBFB41973DA9500F285CA /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFB31973DA9500F285CA /* BaseViewController.m */; };
+		040BBFBD1973E07F00F285CA /* MNColoredButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFB71973E07F00F285CA /* MNColoredButton.m */; };
+		040BBFBE1973E07F00F285CA /* UIView+MNColorKitImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFBC1973E07F00F285CA /* UIView+MNColorKitImages.m */; };
 		DF239C2B195915B600ECB3D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF239C2A195915B600ECB3D5 /* Foundation.framework */; };
 		DF239C2D195915B600ECB3D5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF239C2C195915B600ECB3D5 /* CoreGraphics.framework */; };
 		DF239C2F195915B600ECB3D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF239C2E195915B600ECB3D5 /* UIKit.framework */; };
@@ -72,6 +75,15 @@
 		040BBFAC1973B95400F285CA /* Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base.m; sourceTree = "<group>"; };
 		040BBFAE1973BEC700F285CA /* Objective.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Objective.h; sourceTree = "<group>"; };
 		040BBFAF1973BEC700F285CA /* Objective.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Objective.m; sourceTree = "<group>"; };
+		040BBFB21973DA9500F285CA /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		040BBFB31973DA9500F285CA /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		040BBFB61973E07F00F285CA /* MNColoredButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNColoredButton.h; sourceTree = "<group>"; };
+		040BBFB71973E07F00F285CA /* MNColoredButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNColoredButton.m; sourceTree = "<group>"; };
+		040BBFB81973E07F00F285CA /* MNColorKit-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MNColorKit-Prefix.pch"; sourceTree = "<group>"; };
+		040BBFB91973E07F00F285CA /* MNColorKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNColorKit.h; sourceTree = "<group>"; };
+		040BBFBA1973E07F00F285CA /* RGBX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGBX.h; sourceTree = "<group>"; };
+		040BBFBB1973E07F00F285CA /* UIView+MNColorKitImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MNColorKitImages.h"; sourceTree = "<group>"; };
+		040BBFBC1973E07F00F285CA /* UIView+MNColorKitImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MNColorKitImages.m"; sourceTree = "<group>"; };
 		DF239C27195915B600ECB3D5 /* ResumeManage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResumeManage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF239C2A195915B600ECB3D5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DF239C2C195915B600ECB3D5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -155,6 +167,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040BBFB11973DA8200F285CA /* BaseViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				040BBFB21973DA9500F285CA /* BaseViewController.h */,
+				040BBFB31973DA9500F285CA /* BaseViewController.m */,
+			);
+			path = BaseViewControllers;
+			sourceTree = "<group>";
+		};
+		040BBFB51973E07F00F285CA /* MNColorKit */ = {
+			isa = PBXGroup;
+			children = (
+				040BBFB61973E07F00F285CA /* MNColoredButton.h */,
+				040BBFB71973E07F00F285CA /* MNColoredButton.m */,
+				040BBFB81973E07F00F285CA /* MNColorKit-Prefix.pch */,
+				040BBFB91973E07F00F285CA /* MNColorKit.h */,
+				040BBFBA1973E07F00F285CA /* RGBX.h */,
+				040BBFBB1973E07F00F285CA /* UIView+MNColorKitImages.h */,
+				040BBFBC1973E07F00F285CA /* UIView+MNColorKitImages.m */,
+			);
+			path = MNColorKit;
+			sourceTree = "<group>";
+		};
 		DF239C1E195915B600ECB3D5 = {
 			isa = PBXGroup;
 			children = (
@@ -312,6 +347,7 @@
 		DFC14DA2196A4AD600305F33 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				040BBFB11973DA8200F285CA /* BaseViewControllers */,
 				DFC14DA6196A4B2400305F33 /* HomeViewController.h */,
 				DFC14DA7196A4B2400305F33 /* HomeViewController.m */,
 				DFC14DA3196A4AFC00305F33 /* JobWishViewController.h */,
@@ -340,6 +376,7 @@
 		DFD52C371963F1C9001F1DF3 /* ThreeParty */ = {
 			isa = PBXGroup;
 			children = (
+				040BBFB51973E07F00F285CA /* MNColorKit */,
 				DFD05B10196E43C600BD8F44 /* SuggestionsList */,
 				DF80F54A196D34F90023FCA6 /* IntroControll */,
 				DF80F539196CEE3D0023FCA6 /* CPKenburns */,
@@ -457,6 +494,7 @@
 				DFD05B13196E43C600BD8F44 /* SuggestionsList.m in Sources */,
 				040BBFB01973BEC700F285CA /* Objective.m in Sources */,
 				DFB09EFA1974C6B400BC9A5F /* Education.m in Sources */,
+				040BBFBE1973E07F00F285CA /* UIView+MNColorKitImages.m in Sources */,
 				DF239C37195915B600ECB3D5 /* main.m in Sources */,
 				DF940313196BA2AD00411FB9 /* EGORefreshTableFootView.m in Sources */,
 				DF9402FF196B92E200411FB9 /* Test.m in Sources */,
@@ -474,9 +512,11 @@
 				DFC14DA8196A4B2400305F33 /* HomeViewController.m in Sources */,
 				040BBFA41973B54200F285CA /* Resume.m in Sources */,
 				DF80F552196D34F90023FCA6 /* IntroModel.m in Sources */,
+				040BBFBD1973E07F00F285CA /* MNColoredButton.m in Sources */,
 				DF940320196BA4D100411FB9 /* ModelTest.m in Sources */,
 				040BBFAD1973B95400F285CA /* Base.m in Sources */,
 				DF80F553196D34F90023FCA6 /* IntroView.m in Sources */,
+				040BBFB41973DA9500F285CA /* BaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

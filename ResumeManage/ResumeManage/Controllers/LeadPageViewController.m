@@ -10,6 +10,7 @@
 #import "LeadPageViewController.h"
 #import "CPKenburnsView.h"
 #import "SchoolMajorViewController.h"
+#import "MNColorKit.h"
 
 @interface LeadPageViewController ()
 
@@ -36,6 +37,10 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    MNColoredButton *button = [[MNColoredButton alloc]init];
+    [button setBackgroundColor:[UIColor yellowColor]];
+    [button setFrame:CGRectMake(100, 0, 30, 30)];
+    [self.view addSubview:button];
     
     UIView *firstView = [[UIView alloc]init];
     firstView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
