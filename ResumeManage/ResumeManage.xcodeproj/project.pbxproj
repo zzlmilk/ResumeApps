@@ -16,7 +16,7 @@
 		040BBFBD1973E07F00F285CA /* MNColoredButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFB71973E07F00F285CA /* MNColoredButton.m */; };
 		040BBFBE1973E07F00F285CA /* UIView+MNColorKitImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFBC1973E07F00F285CA /* UIView+MNColorKitImages.m */; };
 		040BBFC119750E2100F285CA /* GuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFC019750E2100F285CA /* GuideView.m */; };
-		040BBFC51975177000F285CA /* ResumeColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFC41975177000F285CA /* ResumeColor.m */; };
+		040BBFC919751D0800F285CA /* ResumeColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFC819751D0800F285CA /* ResumeColor.m */; };
 		DF239C2B195915B600ECB3D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF239C2A195915B600ECB3D5 /* Foundation.framework */; };
 		DF239C2D195915B600ECB3D5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF239C2C195915B600ECB3D5 /* CoreGraphics.framework */; };
 		DF239C2F195915B600ECB3D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF239C2E195915B600ECB3D5 /* UIKit.framework */; };
@@ -88,8 +88,8 @@
 		040BBFBC1973E07F00F285CA /* UIView+MNColorKitImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MNColorKitImages.m"; sourceTree = "<group>"; };
 		040BBFBF19750E2100F285CA /* GuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideView.h; sourceTree = "<group>"; };
 		040BBFC019750E2100F285CA /* GuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideView.m; sourceTree = "<group>"; };
-		040BBFC31975177000F285CA /* ResumeColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResumeColor.h; path = ../ResumeColor.h; sourceTree = "<group>"; };
-		040BBFC41975177000F285CA /* ResumeColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResumeColor.m; path = ../ResumeColor.m; sourceTree = "<group>"; };
+		040BBFC719751D0800F285CA /* ResumeColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResumeColor.h; sourceTree = "<group>"; };
+		040BBFC819751D0800F285CA /* ResumeColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResumeColor.m; sourceTree = "<group>"; };
 		DF239C27195915B600ECB3D5 /* ResumeManage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResumeManage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF239C2A195915B600ECB3D5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DF239C2C195915B600ECB3D5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -199,8 +199,8 @@
 		040BBFC61975177C00F285CA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				040BBFC31975177000F285CA /* ResumeColor.h */,
-				040BBFC41975177000F285CA /* ResumeColor.m */,
+				040BBFC719751D0800F285CA /* ResumeColor.h */,
+				040BBFC819751D0800F285CA /* ResumeColor.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -513,7 +513,7 @@
 				040BBFB01973BEC700F285CA /* Objective.m in Sources */,
 				DFB09EFA1974C6B400BC9A5F /* Education.m in Sources */,
 				040BBFBE1973E07F00F285CA /* UIView+MNColorKitImages.m in Sources */,
-				040BBFC51975177000F285CA /* ResumeColor.m in Sources */,
+				040BBFC919751D0800F285CA /* ResumeColor.m in Sources */,
 				DF239C37195915B600ECB3D5 /* main.m in Sources */,
 				DF940313196BA2AD00411FB9 /* EGORefreshTableFootView.m in Sources */,
 				DF9402FF196B92E200411FB9 /* Test.m in Sources */,
