@@ -22,11 +22,13 @@
 #import <Foundation/Foundation.h>
 #import "Personal.h"
 #import "Objective.h"
+#import "Education.h"
 
 
 typedef enum{
     PersonalAttribute = 0,
     ObjectiveAttribute =1,
+    EducationAttribute =2,
     
 }resumeAttribute;
 
@@ -37,6 +39,7 @@ typedef enum{
 
 @property(nonatomic,strong) Personal *personal;
 @property(nonatomic,strong) Objective *objective;
+@property(nonatomic,strong) Education *education;
 
 
 @end

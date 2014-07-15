@@ -34,6 +34,7 @@ static CGFloat kImageOriginHight = 240.f;
     r.personal.gender = male;
     r.personal.cellPhone = @"15901794453";
     r.personal.email = @"zzlmilk@gmail.com";
+
     
     
        
@@ -64,8 +65,8 @@ static CGFloat kImageOriginHight = 240.f;
     
     resumeAttributes = [NSMutableArray array];
     [resumeAttributes  addObject:@"0"];
-    
     [resumeAttributes  addObject:@"1"];
+    [resumeAttributes  addObject:@"2"];
     
     
     

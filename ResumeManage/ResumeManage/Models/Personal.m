@@ -15,7 +15,7 @@
         self.description = @"个人信息的描述";
         self.number = @"1";
         self.color = [UIColor colorWithRed:237/255.f green:180/255.0 blue:44/255.f alpha:1.f];
-        self.isComplete = YES;
+        self.isComplete = NO;
 
     }
     return self;

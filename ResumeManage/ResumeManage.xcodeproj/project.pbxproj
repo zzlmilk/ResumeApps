@@ -43,6 +43,7 @@
 		DF94031D196BA39100411FB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF239C3C195915B600ECB3D5 /* Main.storyboard */; };
 		DF940320196BA4D100411FB9 /* ModelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DF94031F196BA4D100411FB9 /* ModelTest.m */; };
 		DF940323196BA54400411FB9 /* LeadPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF940322196BA54400411FB9 /* LeadPageViewController.m */; };
+		DFB09EFA1974C6B400BC9A5F /* Education.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB09EF91974C6B400BC9A5F /* Education.m */; };
 		DFC14DA5196A4AFC00305F33 /* JobWishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC14DA4196A4AFC00305F33 /* JobWishViewController.m */; };
 		DFC14DA8196A4B2400305F33 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC14DA7196A4B2400305F33 /* HomeViewController.m */; };
 		DFD05B13196E43C600BD8F44 /* SuggestionsList.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD05B12196E43C600BD8F44 /* SuggestionsList.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -116,6 +117,8 @@
 		DF94031F196BA4D100411FB9 /* ModelTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelTest.m; sourceTree = "<group>"; };
 		DF940321196BA54400411FB9 /* LeadPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeadPageViewController.h; sourceTree = "<group>"; };
 		DF940322196BA54400411FB9 /* LeadPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeadPageViewController.m; sourceTree = "<group>"; };
+		DFB09EF81974C6B400BC9A5F /* Education.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Education.h; sourceTree = "<group>"; };
+		DFB09EF91974C6B400BC9A5F /* Education.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Education.m; sourceTree = "<group>"; };
 		DFC14DA3196A4AFC00305F33 /* JobWishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobWishViewController.h; sourceTree = "<group>"; };
 		DFC14DA4196A4AFC00305F33 /* JobWishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobWishViewController.m; sourceTree = "<group>"; };
 		DFC14DA6196A4B2400305F33 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
@@ -262,6 +265,8 @@
 				040BBFAC1973B95400F285CA /* Base.m */,
 				040BBFAE1973BEC700F285CA /* Objective.h */,
 				040BBFAF1973BEC700F285CA /* Objective.m */,
+				DFB09EF81974C6B400BC9A5F /* Education.h */,
+				DFB09EF91974C6B400BC9A5F /* Education.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -451,6 +456,7 @@
 			files = (
 				DFD05B13196E43C600BD8F44 /* SuggestionsList.m in Sources */,
 				040BBFB01973BEC700F285CA /* Objective.m in Sources */,
+				DFB09EFA1974C6B400BC9A5F /* Education.m in Sources */,
 				DF239C37195915B600ECB3D5 /* main.m in Sources */,
 				DF940313196BA2AD00411FB9 /* EGORefreshTableFootView.m in Sources */,
 				DF9402FF196B92E200411FB9 /* Test.m in Sources */,

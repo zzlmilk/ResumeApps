@@ -15,6 +15,7 @@
     if (self = [super init]) {        
         _personal = [[Personal alloc]init];
         _objective = [[Objective alloc]init];
+        _education = [[Education alloc]init];
 
         
     }

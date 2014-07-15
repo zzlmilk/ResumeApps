@@ -62,6 +62,14 @@
                 _color = resume.objective.color;
                 _number = resume.objective.number;
                 _isComplete = resume.objective.isComplete;
+                break;
+            case EducationAttribute:
+                _title = resume.education.title;
+                _description = resume.education.description;
+                _color = resume.education.color;
+                _number = resume.education.number;
+                _isComplete = resume.education.isComplete;
+                break;
 
             default:
                 break;
