@@ -19,7 +19,6 @@
 		040BBFC919751D0800F285CA /* ResumeColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFC819751D0800F285CA /* ResumeColor.m */; };
 		040BBFE41975387A00F285CA /* ResumerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFE31975387A00F285CA /* ResumerViewController.m */; };
 		040BBFE819765A9000F285CA /* Colours.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFE719765A9000F285CA /* Colours.m */; };
-		040BBFEA19765AA700F285CA /* AboutColours in Resources */ = {isa = PBXBuildFile; fileRef = 040BBFE919765AA700F285CA /* AboutColours */; };
 		DF239C2B195915B600ECB3D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF239C2A195915B600ECB3D5 /* Foundation.framework */; };
 		DF239C2D195915B600ECB3D5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF239C2C195915B600ECB3D5 /* CoreGraphics.framework */; };
 		DF239C2F195915B600ECB3D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF239C2E195915B600ECB3D5 /* UIKit.framework */; };
@@ -54,6 +53,7 @@
 		DFB09EFA1974C6B400BC9A5F /* Education.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB09EF91974C6B400BC9A5F /* Education.m */; };
 		DFC14DA5196A4AFC00305F33 /* JobWishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC14DA4196A4AFC00305F33 /* JobWishViewController.m */; };
 		DFC14DA8196A4B2400305F33 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC14DA7196A4B2400305F33 /* HomeViewController.m */; };
+		DFCAC3AE19765E8900107703 /* AboutColours in Resources */ = {isa = PBXBuildFile; fileRef = DFCAC3AD19765E8900107703 /* AboutColours */; };
 		DFD05B13196E43C600BD8F44 /* SuggestionsList.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD05B12196E43C600BD8F44 /* SuggestionsList.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		DFD05B16196E9B7F00BD8F44 /* SchoolMajorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD05B15196E9B7F00BD8F44 /* SchoolMajorViewController.m */; };
 		DFD05B19196EA67D00BD8F44 /* ListSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD05B18196EA67D00BD8F44 /* ListSectionViewController.m */; };
@@ -97,7 +97,6 @@
 		040BBFE31975387A00F285CA /* ResumerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResumerViewController.m; sourceTree = "<group>"; };
 		040BBFE619765A9000F285CA /* Colours.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Colours.h; path = ResumeManage/Classes/Colours.h; sourceTree = SOURCE_ROOT; };
 		040BBFE719765A9000F285CA /* Colours.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Colours.m; path = ResumeManage/Classes/Colours.m; sourceTree = SOURCE_ROOT; };
-		040BBFE919765AA700F285CA /* AboutColours */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AboutColours; path = ../AboutColours; sourceTree = "<group>"; };
 		DF239C27195915B600ECB3D5 /* ResumeManage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResumeManage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF239C2A195915B600ECB3D5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DF239C2C195915B600ECB3D5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -149,6 +148,7 @@
 		DFC14DA4196A4AFC00305F33 /* JobWishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobWishViewController.m; sourceTree = "<group>"; };
 		DFC14DA6196A4B2400305F33 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		DFC14DA7196A4B2400305F33 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		DFCAC3AD19765E8900107703 /* AboutColours */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AboutColours; path = ResumeManage/Classes/AboutColours; sourceTree = SOURCE_ROOT; };
 		DFD05B11196E43C600BD8F44 /* SuggestionsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionsList.h; sourceTree = "<group>"; };
 		DFD05B12196E43C600BD8F44 /* SuggestionsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestionsList.m; sourceTree = "<group>"; };
 		DFD05B14196E9B7F00BD8F44 /* SchoolMajorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchoolMajorViewController.h; sourceTree = "<group>"; };
@@ -226,7 +226,7 @@
 		040BBFE519765A8700F285CA /* Colours */ = {
 			isa = PBXGroup;
 			children = (
-				040BBFE919765AA700F285CA /* AboutColours */,
+				DFCAC3AD19765E8900107703 /* AboutColours */,
 				040BBFE619765A9000F285CA /* Colours.h */,
 				040BBFE719765A9000F285CA /* Colours.m */,
 			);
@@ -519,7 +519,7 @@
 				DF940317196BA2AD00411FB9 /* blueArrow.png in Resources */,
 				DF940316196BA2AD00411FB9 /* blackArrow@2x.png in Resources */,
 				DF94031B196BA2AD00411FB9 /* whiteArrow.png in Resources */,
-				040BBFEA19765AA700F285CA /* AboutColours in Resources */,
+				DFCAC3AE19765E8900107703 /* AboutColours in Resources */,
 				DF940319196BA2AD00411FB9 /* grayArrow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
