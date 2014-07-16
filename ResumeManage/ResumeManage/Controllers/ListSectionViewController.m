@@ -82,10 +82,8 @@ static CGFloat kImageOriginHight = 300.f;
         UITableView *_tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
         _tableView.delegate =self;
         _tableView.dataSource=self;
-        
         _tableView.contentInset = UIEdgeInsetsMake(kImageOriginHight, 0, 0, 0);
-        
-        _expandZoomImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"testBg"]];
+        _expandZoomImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"image4"]];
         _expandZoomImageView.frame = CGRectMake(0, 0, 320, kImageOriginHight);
         [_tableView addSubview:_expandZoomImageView];
         _tableView;
@@ -126,7 +124,6 @@ static CGFloat kImageOriginHight = 300.f;
     }
 
 
-    
 
     
     NSString * att = [resumeAttributes objectAtIndex:indexPath.row];

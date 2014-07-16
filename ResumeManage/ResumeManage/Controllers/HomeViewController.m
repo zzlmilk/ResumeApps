@@ -151,6 +151,8 @@
     [_homeScrollView setContentSize:CGSizeMake(320, self.view.frame.size.height+100)];
 }
 
+
+
 // 调用相机
 -(void)onClickImageView{
 

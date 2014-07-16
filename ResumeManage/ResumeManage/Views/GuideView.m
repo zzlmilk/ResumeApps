@@ -27,10 +27,11 @@
     UIImageView *background = [[UIImageView alloc]initWithFrame:firstView.bounds];
 //    background.image = [UIImage mn_imageWithColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.3]];
     
+    
     [firstView addSubview:background];
     
 
-
+    
     
     UILabel *firstLabel = [[UILabel alloc]init];
     firstLabel.frame = firstView.bounds;

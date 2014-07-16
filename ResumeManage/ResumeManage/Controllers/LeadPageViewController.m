@@ -13,6 +13,8 @@
 #import "MNColorKit.h"
 
 
+#import "ResumerViewController.h"
+
 
 
 @interface LeadPageViewController ()
@@ -54,6 +56,8 @@
 
 #pragma mark GuideViewDelegate 
 -(void)GuideDidFinish{
+    
+    
     SchoolMajorViewController *schoolMajorVC = [self.storyboard instantiateViewControllerWithIdentifier:@"schoolMajorViewController"];
     
     [self presentViewController:schoolMajorVC animated:YES completion:^{

@@ -17,6 +17,9 @@
 		040BBFBE1973E07F00F285CA /* UIView+MNColorKitImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFBC1973E07F00F285CA /* UIView+MNColorKitImages.m */; };
 		040BBFC119750E2100F285CA /* GuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFC019750E2100F285CA /* GuideView.m */; };
 		040BBFC919751D0800F285CA /* ResumeColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFC819751D0800F285CA /* ResumeColor.m */; };
+		040BBFE41975387A00F285CA /* ResumerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFE31975387A00F285CA /* ResumerViewController.m */; };
+		040BBFE819765A9000F285CA /* Colours.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFE719765A9000F285CA /* Colours.m */; };
+		040BBFEA19765AA700F285CA /* AboutColours in Resources */ = {isa = PBXBuildFile; fileRef = 040BBFE919765AA700F285CA /* AboutColours */; };
 		DF239C2B195915B600ECB3D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF239C2A195915B600ECB3D5 /* Foundation.framework */; };
 		DF239C2D195915B600ECB3D5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF239C2C195915B600ECB3D5 /* CoreGraphics.framework */; };
 		DF239C2F195915B600ECB3D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF239C2E195915B600ECB3D5 /* UIKit.framework */; };
@@ -90,6 +93,11 @@
 		040BBFC019750E2100F285CA /* GuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideView.m; sourceTree = "<group>"; };
 		040BBFC719751D0800F285CA /* ResumeColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResumeColor.h; sourceTree = "<group>"; };
 		040BBFC819751D0800F285CA /* ResumeColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResumeColor.m; sourceTree = "<group>"; };
+		040BBFE21975387A00F285CA /* ResumerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResumerViewController.h; sourceTree = "<group>"; };
+		040BBFE31975387A00F285CA /* ResumerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResumerViewController.m; sourceTree = "<group>"; };
+		040BBFE619765A9000F285CA /* Colours.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Colours.h; path = ResumeManage/Classes/Colours.h; sourceTree = SOURCE_ROOT; };
+		040BBFE719765A9000F285CA /* Colours.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Colours.m; path = ResumeManage/Classes/Colours.m; sourceTree = SOURCE_ROOT; };
+		040BBFE919765AA700F285CA /* AboutColours */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AboutColours; path = ../AboutColours; sourceTree = "<group>"; };
 		DF239C27195915B600ECB3D5 /* ResumeManage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResumeManage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF239C2A195915B600ECB3D5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DF239C2C195915B600ECB3D5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -199,10 +207,30 @@
 		040BBFC61975177C00F285CA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				040BBFE519765A8700F285CA /* Colours */,
 				040BBFC719751D0800F285CA /* ResumeColor.h */,
 				040BBFC819751D0800F285CA /* ResumeColor.m */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		040BBFE11975376500F285CA /* ResumeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				040BBFE21975387A00F285CA /* ResumerViewController.h */,
+				040BBFE31975387A00F285CA /* ResumerViewController.m */,
+			);
+			path = ResumeViewController;
+			sourceTree = "<group>";
+		};
+		040BBFE519765A8700F285CA /* Colours */ = {
+			isa = PBXGroup;
+			children = (
+				040BBFE919765AA700F285CA /* AboutColours */,
+				040BBFE619765A9000F285CA /* Colours.h */,
+				040BBFE719765A9000F285CA /* Colours.m */,
+			);
+			path = Colours;
 			sourceTree = "<group>";
 		};
 		DF239C1E195915B600ECB3D5 = {
@@ -365,6 +393,7 @@
 		DFC14DA2196A4AD600305F33 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				040BBFE11975376500F285CA /* ResumeViewController */,
 				040BBFB11973DA8200F285CA /* BaseViewControllers */,
 				DFC14DA6196A4B2400305F33 /* HomeViewController.h */,
 				DFC14DA7196A4B2400305F33 /* HomeViewController.m */,
@@ -490,6 +519,7 @@
 				DF940317196BA2AD00411FB9 /* blueArrow.png in Resources */,
 				DF940316196BA2AD00411FB9 /* blackArrow@2x.png in Resources */,
 				DF94031B196BA2AD00411FB9 /* whiteArrow.png in Resources */,
+				040BBFEA19765AA700F285CA /* AboutColours in Resources */,
 				DF940319196BA2AD00411FB9 /* grayArrow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,6 +545,7 @@
 				040BBFBE1973E07F00F285CA /* UIView+MNColorKitImages.m in Sources */,
 				040BBFC919751D0800F285CA /* ResumeColor.m in Sources */,
 				DF239C37195915B600ECB3D5 /* main.m in Sources */,
+				040BBFE41975387A00F285CA /* ResumerViewController.m in Sources */,
 				DF940313196BA2AD00411FB9 /* EGORefreshTableFootView.m in Sources */,
 				DF9402FF196B92E200411FB9 /* Test.m in Sources */,
 				DFC14DA5196A4AFC00305F33 /* JobWishViewController.m in Sources */,
@@ -533,6 +564,7 @@
 				040BBFA41973B54200F285CA /* Resume.m in Sources */,
 				DF80F552196D34F90023FCA6 /* IntroModel.m in Sources */,
 				040BBFBD1973E07F00F285CA /* MNColoredButton.m in Sources */,
+				040BBFE819765A9000F285CA /* Colours.m in Sources */,
 				DF940320196BA4D100411FB9 /* ModelTest.m in Sources */,
 				040BBFAD1973B95400F285CA /* Base.m in Sources */,
 				DF80F553196D34F90023FCA6 /* IntroView.m in Sources */,

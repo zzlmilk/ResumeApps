@@ -13,6 +13,7 @@
 {
     UITableView *tableView;
     NSMutableArray *resumeAttributes;
+    
 }
 
 @end
