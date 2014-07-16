@@ -36,7 +36,7 @@
     UILabel *firstLabel = [[UILabel alloc]init];
     firstLabel.frame = firstView.bounds;
     firstLabel.text = title;
-    firstLabel.textAlignment = NSTextAlignmentLeft;
+    firstLabel.textAlignment = NSTextAlignmentCenter;
     firstLabel.font = [UIFont boldSystemFontOfSize:20];
     firstLabel.numberOfLines = 0;
     [firstLabel sizeToFit];
@@ -57,22 +57,22 @@
     if (self) {
         
         
-  UIView * firstView = [self guideTitleView:CGRectMake(30, 90, 250, 50) title:@"我们可以失望，但不能盲目。"];
+  UIView * firstView = [self guideTitleView:CGRectMake(45, 190, 250, 50) title:@"我们可以失望，但不能盲目。"];
 
     IntroModel *model1 = [[IntroModel alloc] initWithTitle:nil description:nil image:@"image1" view:firstView];
         
-    UIView * secondView = [self guideTitleView:CGRectMake(30, 90, 250, 50) title:@"流过泪的眼睛更明亮，滴过血的心灵更坚强！"];
+    UIView * secondView = [self guideTitleView:CGRectMake(45, 190, 250, 50) title:@"流过泪的眼睛更明亮，滴过血的心灵更坚强！"];
         
     IntroModel *model2 = [[IntroModel alloc] initWithTitle:nil description:nil image:@"image2" view:secondView];
         
         
         
-    UIView * threeView = [self guideTitleView:CGRectMake(30, 90, 250, 50) title:@"业精于勤，荒于嬉；行成于思，毁于随。"];
+    UIView * threeView = [self guideTitleView:CGRectMake(45, 190, 250, 50) title:@"业精于勤，荒于嬉；行成于思，毁于随。"];
         
     IntroModel *model3 = [[IntroModel alloc] initWithTitle:nil description:nil image:@"image3" view:threeView];
 
         
-        UIView * fourView = [self guideTitleView:CGRectMake(30, 90, 250, 50) title:@"自己选择的路，跪着也要把它走完。"];
+        UIView * fourView = [self guideTitleView:CGRectMake(45, 190, 250, 50) title:@"自己选择的路，跪着也要把它走完。"];
 
         IntroModel *model4 = [[IntroModel alloc] initWithTitle:nil description:nil image:@"image4" view:fourView];
 
