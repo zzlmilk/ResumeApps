@@ -35,6 +35,7 @@
     _homeScrollView.frame = CGRectMake(0, 0, 320, self.view.frame.size.height);
     _homeScrollView.backgroundColor = [UIColor clearColor];
     _homeScrollView.delegate = self;
+    [_homeScrollView setContentSize:CGSizeMake(320, self.view.frame.size.height+100)];
     [self.view addSubview:_homeScrollView];
     
     _backButton.backgroundColor = [UIColor clearColor];
@@ -91,7 +92,7 @@
     UIToolbar * topView = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
     [topView setBarStyle:UIBarStyleDefault];
     UIBarButtonItem * btnSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
-    UIBarButtonItem * doneButton = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(backgroundTap)];
+    UIBarButtonItem * doneButton = [[UIBarButtonItem alloc] initWithTitle:@"完成" style:UIBarButtonItemStyleDone target:self action:@selector(backgroundTap)];
     
     NSArray * buttonsArray = [NSArray arrayWithObjects:btnSpace, doneButton, nil];
     [topView setItems:buttonsArray];
@@ -146,12 +147,6 @@
     
 }
 
-// 使用自动布局 ScrollView的ContentSize 会被重置和屏幕一样， 此方法进行解决
--(void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-    [_homeScrollView setContentSize:CGSizeMake(320, self.view.frame.size.height+100)];
-}
 
 // 调用相机
 -(void)onClickImageView{

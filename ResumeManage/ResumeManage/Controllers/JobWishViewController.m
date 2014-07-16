@@ -54,6 +54,7 @@
     _jobWishScrollView.frame = CGRectMake(0, 0, 320, self.view.frame.size.height);
     _jobWishScrollView.backgroundColor = [UIColor clearColor];
     _jobWishScrollView.delegate = self;
+    [_jobWishScrollView setContentSize:CGSizeMake(320, self.view.frame.size.height+100)];
     [self.view addSubview:_jobWishScrollView];
     
     
@@ -103,7 +104,7 @@
     UIToolbar * topView = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
     [topView setBarStyle:UIBarStyleDefault];
     UIBarButtonItem * btnSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
-    UIBarButtonItem * doneButton = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(keyboardHide)];
+    UIBarButtonItem * doneButton = [[UIBarButtonItem alloc] initWithTitle:@"完成" style:UIBarButtonItemStyleDone target:self action:@selector(keyboardHide)];
     
     NSArray * buttonsArray = [NSArray arrayWithObjects:btnSpace, doneButton, nil];
     [topView setItems:buttonsArray];
@@ -224,12 +225,6 @@
     [_jobWishScrollView setContentOffset:CGPointMake(0, 0) animated:YES];
 }
 
-// 使用自动布局 ScrollView的ContentSize 会被重置和屏幕一样， 此方法进行解决
--(void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-    [_jobWishScrollView setContentSize:CGSizeMake(320, self.view.frame.size.height+100)];
-}
 
 // UITextField 得到焦点 视图滚动避免键盘遮挡
 - (void)textFieldDidBeginEditing:(UITextField *)textField{
