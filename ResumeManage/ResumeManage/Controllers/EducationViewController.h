@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface EducationViewController : UIViewController<UIScrollViewDelegate,UITextFieldDelegate>
+@interface EducationViewController : BaseViewController<UIScrollViewDelegate,UITextFieldDelegate>
 
 @property (strong, nonatomic)IBOutlet UIScrollView *educationScrollView;
 

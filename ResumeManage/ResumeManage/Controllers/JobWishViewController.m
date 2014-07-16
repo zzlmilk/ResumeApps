@@ -10,6 +10,11 @@
 
 @interface JobWishViewController ()
 
+@property(nonatomic,strong)NSArray *jobCategoryArray;
+@property(nonatomic,strong)NSArray *jobNameArray;
+@property(nonatomic,strong)NSArray *wishMoneyArray;
+@property(nonatomic,strong)NSArray *jobStatusArray;
+
 @end
 
 @implementation JobWishViewController
@@ -27,6 +32,12 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.jobCategoryArray = @[@"全职",@"兼职"];
+    self.jobNameArray = @[@"PHP工程师",@"IOS工程师",@"UI网页设计师"];
+    self.wishMoneyArray = @[@"2000-4000",@"4000-6000",@"6000-8000",@"8000-10000"
+                            ,@"10000+"];
+    self.jobStatusArray = @[@"在职",@"离职",@"其他"];
     
     
     UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self    action:@selector(keyboardHide)];
@@ -100,7 +111,98 @@
     [_jobNameTextField setInputAccessoryView:topView];
     [_wishMoneyTextField setInputAccessoryView:topView];
     [_jobStatusTextField setInputAccessoryView:topView];
+    
+    
+    _jobCategoryPickerView = [[UIPickerView alloc]init];
+    _jobCategoryPickerView.backgroundColor =[UIColor whiteColor];
+    _jobCategoryPickerView.delegate = self;
+    _jobCategoryPickerView.tag = 1;
+    _jobKindTextField.inputView = _jobCategoryPickerView;
+    
+    _jobNamePickerView = [[UIPickerView alloc]init];
+    _jobNamePickerView.backgroundColor =[UIColor whiteColor];
+    _jobNamePickerView.delegate = self;
+    _jobNamePickerView.tag = 2;
+    _jobNameTextField.inputView = _jobNamePickerView;
+    
+    _wishMoneyPickerView = [[UIPickerView alloc]init];
+    _wishMoneyPickerView.backgroundColor =[UIColor whiteColor];
+    _wishMoneyPickerView.delegate = self;
+    _wishMoneyPickerView.tag = 3;
+    _wishMoneyTextField.inputView = _wishMoneyPickerView;
+    
+    _jobStatusPickerView = [[UIPickerView alloc]init];
+    _jobStatusPickerView.backgroundColor =[UIColor whiteColor];
+    _jobStatusPickerView.delegate = self;
+    _jobStatusPickerView.tag = 4;
+    _jobStatusTextField.inputView = _jobStatusPickerView;
+    
+    
+    
 }
+
+//返回第component列的行数
+-(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
+    
+    NSInteger pickerCount;
+    
+    switch (pickerView.tag) {
+        case 1:
+            pickerCount = self.jobCategoryArray.count;
+            break;
+        case 2:
+            pickerCount = self.jobNameArray.count;
+            break;
+        case 3:
+            pickerCount = self.wishMoneyArray.count;
+            break;
+        case 4:
+            pickerCount = self.jobStatusArray.count;
+            break;
+            
+        default:
+            break;
+    }
+    
+    return pickerCount;
+    
+}
+
+//返回第component列内容
+-(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
+    
+    NSString *componentContent;
+    
+    switch (pickerView.tag) {
+        case 1:
+            componentContent = self.jobCategoryArray[row];
+            break;
+        case 2:
+            componentContent = self.jobNameArray[row];
+            break;
+        case 3:
+            componentContent = self.wishMoneyArray[row];
+            break;
+        case 4:
+            componentContent = self.jobStatusArray[row];
+            break;
+            
+        default:
+            break;
+    }
+    
+    
+    return componentContent;
+
+}
+#pragma mark 返回列数
+-(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
+    
+    return 1;
+}
+
+
+
 
 //返回上一视图
 -(void)backTopView{
@@ -111,9 +213,9 @@
     
 }
 
-//隐藏键盘
+//隐藏键盘  关闭 datePicker
 -(void)keyboardHide{
-    
+
     [_jobKindTextField resignFirstResponder];
     [_jobNameTextField resignFirstResponder];
     [_wishMoneyTextField resignFirstResponder];
@@ -133,6 +235,9 @@
 - (void)textFieldDidBeginEditing:(UITextField *)textField{
     
     switch (textField.tag) {
+        case 1:
+
+            break;
         case 3:
             [_jobWishScrollView setContentOffset:CGPointMake(0, 80) animated:YES];
             break;

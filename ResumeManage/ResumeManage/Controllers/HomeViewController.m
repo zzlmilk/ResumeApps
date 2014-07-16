@@ -40,7 +40,7 @@
     _backButton.backgroundColor = [UIColor clearColor];
     [_backButton addTarget:self action:@selector(backTopView) forControlEvents:UIControlEventTouchUpInside];
     
-   _avatarImageView.backgroundColor = [UIColor colorWithRed:34/255.f green:201/255.f blue:252/255.f alpha:1.0f];
+    _avatarImageView.image = [UIImage imageNamed:@"headerDefult"];
     _avatarImageView.userInteractionEnabled = YES;
     UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onClickImageView)];
     [_avatarImageView addGestureRecognizer:singleTap];
@@ -58,6 +58,7 @@
     [_ageTextField setBorderStyle:UITextBorderStyleLine];
     _ageTextField.placeholder = @"年 龄";
     _ageTextField.delegate = self;
+    _ageTextField.keyboardType = UIKeyboardTypeNumberPad;
     _ageTextField.tag = 2;
     UIView *agePaddingView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 15, 40)];
     _ageTextField.leftView =agePaddingView;
@@ -69,6 +70,7 @@
     [_phoneTextField setBorderStyle:UITextBorderStyleLine];
     _phoneTextField.placeholder = @"手 机";
     _phoneTextField.delegate = self;
+    _phoneTextField.keyboardType = UIKeyboardTypeNumberPad;
     _phoneTextField.tag = 3;
     UIView *phonePaddingView =[[UIView alloc] initWithFrame:CGRectMake(0, 0, 15, 40)];
     _phoneTextField.leftView =phonePaddingView;

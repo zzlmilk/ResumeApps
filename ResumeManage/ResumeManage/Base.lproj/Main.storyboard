@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1bD-xU-ZqV">
-                                        <rect key="frame" x="115" y="78" width="87" height="87"/>
+                                        <rect key="frame" x="115" y="75" width="87" height="87"/>
                                     </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zMY-L4-ulZ">
                                         <rect key="frame" x="11" y="190" width="300" height="45"/>
@@ -172,7 +172,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UtQ-vb-B8b">
-                                <rect key="frame" x="8" y="239" width="300" height="45"/>
+                                <rect key="frame" x="8" y="279" width="300" height="45"/>
                                 <color key="backgroundColor" red="0.35194013600000001" green="0.37706996349999999" blue="0.63202700410000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="保存并继续">
@@ -189,7 +189,12 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="COb-sY-vZO">
-                                <rect key="frame" x="8" y="140" width="300" height="45"/>
+                                <rect key="frame" x="8" y="135" width="300" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m2y-E7-WTG">
+                                <rect key="frame" x="10" y="207" width="300" height="45"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -197,6 +202,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="graduateTimeTextField" destination="m2y-E7-WTG" id="lPw-ST-9VV"/>
                         <outlet property="majorTextField" destination="COb-sY-vZO" id="aIb-lM-8hf"/>
                         <outlet property="saveSchoolMajorAndNextButton" destination="UtQ-vb-B8b" id="7KQ-9L-BdX"/>
                         <outlet property="schoolTextField" destination="6ti-VC-bR8" id="vW0-5c-xBh"/>

@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface JobWishViewController : UIViewController<UIScrollViewDelegate,UITextFieldDelegate>
+@interface JobWishViewController : BaseViewController<UIScrollViewDelegate,UITextFieldDelegate,UIPickerViewDataSource,UIPickerViewDelegate>
 
 @property (strong, nonatomic)IBOutlet UIScrollView *jobWishScrollView;
 
@@ -20,5 +21,13 @@
 @property (strong, nonatomic)IBOutlet UIButton *saveJobwishAndNextButton;
 
 @property (strong, nonatomic)IBOutlet UIButton *backButton;
+
+
+@property (strong, nonatomic) UIPickerView *jobCategoryPickerView;
+@property (strong, nonatomic) UIPickerView *jobNamePickerView;
+@property (strong, nonatomic) UIPickerView *wishMoneyPickerView;
+@property (strong, nonatomic) UIPickerView *jobStatusPickerView;
+
+
 
 @end
