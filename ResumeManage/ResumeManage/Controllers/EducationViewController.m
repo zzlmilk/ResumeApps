@@ -31,7 +31,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self    action:@selector(backgroundTap)];
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(backgroundTap)];
     tapGestureRecognizer.numberOfTapsRequired = 1;
     [self.view addGestureRecognizer: tapGestureRecognizer];
     [tapGestureRecognizer setCancelsTouchesInView:NO];
@@ -41,6 +41,7 @@
     _educationScrollView.frame = CGRectMake(0, 0,self.view.frame.size.width,self.view.frame.size.height);
     _educationScrollView.backgroundColor = [UIColor clearColor];
     _educationScrollView.delegate = self;
+    [_educationScrollView setContentSize:CGSizeMake(self.view.frame.size.width, self.view.frame.size.height+100)];
     [self.view addSubview:_educationScrollView];
     
     
@@ -87,7 +88,7 @@
     UIToolbar * topView = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
     [topView setBarStyle:UIBarStyleDefault];
     UIBarButtonItem * btnSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
-    UIBarButtonItem * doneButton = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(backgroundTap)];
+    UIBarButtonItem * doneButton = [[UIBarButtonItem alloc] initWithTitle:@"完成" style:UIBarButtonItemStyleDone target:self action:@selector(backgroundTap)];
     
     NSArray * buttonsArray = [NSArray arrayWithObjects:btnSpace, doneButton, nil];
     [topView setItems:buttonsArray];
@@ -98,13 +99,6 @@
     
 }
 
-// 使用自动布局 ScrollView的ContentSize 会被重置和屏幕一样， 此方法进行解决
--(void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-    [_educationScrollView setContentSize:CGSizeMake(self.view.frame.size.width, self.view.frame.size.height+100)];
-    
-}
 
 //关闭键盘
 - (void)backgroundTap{

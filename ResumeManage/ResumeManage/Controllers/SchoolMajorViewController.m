@@ -32,6 +32,12 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
+    _schoolMajorScrollView.frame = CGRectMake(0, 0,self.view.frame.size.width,self.view.frame.size.height);
+    _schoolMajorScrollView.backgroundColor = [UIColor clearColor];
+    _schoolMajorScrollView.delegate = self;
+    [_schoolMajorScrollView setContentSize:CGSizeMake(self.view.frame.size.width, self.view.frame.size.height+100)];
+    [self.view addSubview:_schoolMajorScrollView];
+    
     _schoolTextField.placeholder = @"毕业院校";
     _schoolTextField.delegate = self;
     UIView *schoolPaddingView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 15, 40)];
@@ -50,7 +56,68 @@
     _majorTextField.layer.borderColor = [[UIColor colorWithRed:214/255.f green:214/255.f blue:214/255.f alpha:1.0f] CGColor];
     
     
+    _graduateTimeTextField.placeholder = @"毕业时间";
+    _graduateTimeTextField.delegate = self;
+    UIView *graduateTimePaddingView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 15, 40)];
+    _graduateTimeTextField.leftView =graduateTimePaddingView;
+    _graduateTimeTextField.leftViewMode = UITextFieldViewModeAlways;
+    _graduateTimeTextField.layer.borderWidth = 1.0f;
+    _graduateTimeTextField.layer.borderColor = [[UIColor colorWithRed:214/255.f green:214/255.f blue:214/255.f alpha:1.0f] CGColor];
+
+    NSDate * date = [NSDate date];
+    NSTimeInterval sec = [date timeIntervalSinceNow];
+    NSDate * currentDate = [[NSDate alloc] initWithTimeIntervalSinceNow:sec];
+    NSDateFormatter * df = [[NSDateFormatter alloc] init ];
+    [df setDateFormat:@"yyyy年7月1日"];
+    NSString * yearNumber = [df stringFromDate:currentDate];
+    _graduateTimeTextField.text = yearNumber;
+    
+    
+    datePicker = [[UIDatePicker alloc]init];
+    dateLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh_TW"];
+    datePicker.locale = dateLocale;
+    datePicker.backgroundColor =[UIColor whiteColor];
+    datePicker.timeZone = [NSTimeZone timeZoneWithName:@"GMT"];
+    datePicker.datePickerMode = UIDatePickerModeDate;
+    _graduateTimeTextField.inputView = datePicker;
+    
+    
+    UIToolbar *toolBar = [[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, 320, 44)];
+    toolBar.backgroundColor = [UIColor whiteColor];
+    UILabel *bgLabel = [[UILabel alloc]init];
+    bgLabel.frame = CGRectMake(0, 0, 320, 44);
+    bgLabel.backgroundColor = [UIColor colorWithRed:249/255.f green:249/255.f blue:249/255.f alpha:1.f];
+    [toolBar addSubview:bgLabel];
+    
+    
+    UIBarButtonItem * right = [[UIBarButtonItem alloc] initWithTitle:@"完成" style:UIBarButtonItemStyleDone target:self action:@selector(cancelPicker)];
+    
+    UIBarButtonItem *flexible = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
+    
+    [toolBar setItems:[NSArray arrayWithObjects:flexible,right,nil]  animated:YES];
+    _schoolTextField.inputAccessoryView = toolBar;
+    _majorTextField.inputAccessoryView = toolBar;
+    _graduateTimeTextField.inputAccessoryView = toolBar;
+    
 }
+
+//关闭选择日期 pickerView 并赋值 更新_graduateTimeTextField 数据
+-(void) cancelPicker {
+    
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        NSString *dateFormat = [NSDateFormatter dateFormatFromTemplate:@"yyyy-MM-dd" options:0 locale:dateLocale];
+        [formatter setDateFormat:dateFormat];
+        [formatter setLocale:dateLocale];
+        NSString *datePickertime =[NSString stringWithFormat:@"%@",[formatter stringFromDate:datePicker.date]];
+        NSString *string1 = @"  ";
+        _graduateTimeTextField.text = [string1 stringByAppendingString:datePickertime];
+    
+    [_schoolTextField resignFirstResponder];
+    [_majorTextField resignFirstResponder];
+    [_graduateTimeTextField resignFirstResponder];
+    
+}
+
 
 - (void)didReceiveMemoryWarning
 {
