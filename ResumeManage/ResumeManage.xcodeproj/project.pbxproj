@@ -57,6 +57,7 @@
 		DFB09EFA1974C6B400BC9A5F /* Education.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB09EF91974C6B400BC9A5F /* Education.m */; };
 		DFC14DA5196A4AFC00305F33 /* JobWishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC14DA4196A4AFC00305F33 /* JobWishViewController.m */; };
 		DFC14DA8196A4B2400305F33 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC14DA7196A4B2400305F33 /* HomeViewController.m */; };
+		DFCAC3AE19765E8900107703 /* AboutColours in Resources */ = {isa = PBXBuildFile; fileRef = DFCAC3AD19765E8900107703 /* AboutColours */; };
 		DFD05B13196E43C600BD8F44 /* SuggestionsList.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD05B12196E43C600BD8F44 /* SuggestionsList.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		DFD05B16196E9B7F00BD8F44 /* SchoolMajorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD05B15196E9B7F00BD8F44 /* SchoolMajorViewController.m */; };
 		DFD05B19196EA67D00BD8F44 /* ListSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD05B18196EA67D00BD8F44 /* ListSectionViewController.m */; };
@@ -158,6 +159,7 @@
 		DFC14DA4196A4AFC00305F33 /* JobWishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobWishViewController.m; sourceTree = "<group>"; };
 		DFC14DA6196A4B2400305F33 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		DFC14DA7196A4B2400305F33 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		DFCAC3AD19765E8900107703 /* AboutColours */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AboutColours; path = ResumeManage/Classes/AboutColours; sourceTree = SOURCE_ROOT; };
 		DFD05B11196E43C600BD8F44 /* SuggestionsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionsList.h; sourceTree = "<group>"; };
 		DFD05B12196E43C600BD8F44 /* SuggestionsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestionsList.m; sourceTree = "<group>"; };
 		DFD05B14196E9B7F00BD8F44 /* SchoolMajorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchoolMajorViewController.h; sourceTree = "<group>"; };
@@ -235,7 +237,7 @@
 		040BBFE519765A8700F285CA /* Colours */ = {
 			isa = PBXGroup;
 			children = (
-				040BBFE919765AA700F285CA /* AboutColours */,
+				DFCAC3AD19765E8900107703 /* AboutColours */,
 				040BBFE619765A9000F285CA /* Colours.h */,
 				040BBFE719765A9000F285CA /* Colours.m */,
 			);
@@ -542,7 +544,7 @@
 				DF940317196BA2AD00411FB9 /* blueArrow.png in Resources */,
 				DF940316196BA2AD00411FB9 /* blackArrow@2x.png in Resources */,
 				DF94031B196BA2AD00411FB9 /* whiteArrow.png in Resources */,
-				040BBFEA19765AA700F285CA /* AboutColours in Resources */,
+				DFCAC3AE19765E8900107703 /* AboutColours in Resources */,
 				DF940319196BA2AD00411FB9 /* grayArrow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
