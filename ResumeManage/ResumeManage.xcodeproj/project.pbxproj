@@ -19,7 +19,6 @@
 		040BBFC919751D0800F285CA /* ResumeColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFC819751D0800F285CA /* ResumeColor.m */; };
 		040BBFE41975387A00F285CA /* ResumerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFE31975387A00F285CA /* ResumerViewController.m */; };
 		040BBFE819765A9000F285CA /* Colours.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFE719765A9000F285CA /* Colours.m */; };
-		040BBFEA19765AA700F285CA /* AboutColours in Resources */ = {isa = PBXBuildFile; fileRef = 040BBFE919765AA700F285CA /* AboutColours */; };
 		040BBFEE1976639300F285CA /* ResumeScrollerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFED1976639300F285CA /* ResumeScrollerView.m */; };
 		040BBFF11976647700F285CA /* ResumeScrollerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFF01976647700F285CA /* ResumeScrollerViewCell.m */; };
 		040BBFF41977945000F285CA /* ArrowClick.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFF31977945000F285CA /* ArrowClick.m */; };
@@ -40,6 +39,9 @@
 		DF80F551196D34F90023FCA6 /* IntroControll.m in Sources */ = {isa = PBXBuildFile; fileRef = DF80F54C196D34F90023FCA6 /* IntroControll.m */; };
 		DF80F552196D34F90023FCA6 /* IntroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF80F54E196D34F90023FCA6 /* IntroModel.m */; };
 		DF80F553196D34F90023FCA6 /* IntroView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF80F550196D34F90023FCA6 /* IntroView.m */; };
+		DF90CE361977AFEB00835C9D /* PersonInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF90CE351977AFEB00835C9D /* PersonInfoView.m */; };
+		DF90CE391977D06E00835C9D /* SpecialtyView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF90CE381977D06E00835C9D /* SpecialtyView.m */; };
+		DF90CE3C1977D76C00835C9D /* IWishView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF90CE3B1977D76C00835C9D /* IWishView.m */; };
 		DF9402FF196B92E200411FB9 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9402FE196B92E200411FB9 /* Test.m */; };
 		DF940313196BA2AD00411FB9 /* EGORefreshTableFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF940307196BA2AD00411FB9 /* EGORefreshTableFootView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		DF940314196BA2AD00411FB9 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF940309196BA2AD00411FB9 /* EGORefreshTableHeaderView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -101,7 +103,6 @@
 		040BBFE31975387A00F285CA /* ResumerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResumerViewController.m; sourceTree = "<group>"; };
 		040BBFE619765A9000F285CA /* Colours.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Colours.h; path = ResumeManage/Classes/Colours.h; sourceTree = SOURCE_ROOT; };
 		040BBFE719765A9000F285CA /* Colours.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Colours.m; path = ResumeManage/Classes/Colours.m; sourceTree = SOURCE_ROOT; };
-		040BBFE919765AA700F285CA /* AboutColours */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AboutColours; path = ../AboutColours; sourceTree = "<group>"; };
 		040BBFEC1976639300F285CA /* ResumeScrollerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResumeScrollerView.h; sourceTree = "<group>"; };
 		040BBFED1976639300F285CA /* ResumeScrollerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResumeScrollerView.m; sourceTree = "<group>"; };
 		040BBFEF1976647700F285CA /* ResumeScrollerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResumeScrollerViewCell.h; sourceTree = "<group>"; };
@@ -135,6 +136,12 @@
 		DF80F54E196D34F90023FCA6 /* IntroModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroModel.m; sourceTree = "<group>"; };
 		DF80F54F196D34F90023FCA6 /* IntroView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroView.h; sourceTree = "<group>"; };
 		DF80F550196D34F90023FCA6 /* IntroView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroView.m; sourceTree = "<group>"; };
+		DF90CE341977AFEB00835C9D /* PersonInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonInfoView.h; sourceTree = "<group>"; };
+		DF90CE351977AFEB00835C9D /* PersonInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonInfoView.m; sourceTree = "<group>"; };
+		DF90CE371977D06E00835C9D /* SpecialtyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialtyView.h; sourceTree = "<group>"; };
+		DF90CE381977D06E00835C9D /* SpecialtyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialtyView.m; sourceTree = "<group>"; };
+		DF90CE3A1977D76C00835C9D /* IWishView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWishView.h; sourceTree = "<group>"; };
+		DF90CE3B1977D76C00835C9D /* IWishView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWishView.m; sourceTree = "<group>"; };
 		DF9402FD196B92E200411FB9 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		DF9402FE196B92E200411FB9 /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 		DF940306196BA2AD00411FB9 /* EGORefreshTableFootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableFootView.h; sourceTree = "<group>"; };
@@ -355,6 +362,19 @@
 			path = IntroControll;
 			sourceTree = "<group>";
 		};
+		DF90CE331977AFB200835C9D /* PreviewInfo */ = {
+			isa = PBXGroup;
+			children = (
+				DF90CE341977AFEB00835C9D /* PersonInfoView.h */,
+				DF90CE351977AFEB00835C9D /* PersonInfoView.m */,
+				DF90CE371977D06E00835C9D /* SpecialtyView.h */,
+				DF90CE381977D06E00835C9D /* SpecialtyView.m */,
+				DF90CE3A1977D76C00835C9D /* IWishView.h */,
+				DF90CE3B1977D76C00835C9D /* IWishView.m */,
+			);
+			path = PreviewInfo;
+			sourceTree = "<group>";
+		};
 		DF9402F8196B91E800411FB9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -377,6 +397,7 @@
 		DF9402F9196B91F200411FB9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DF90CE331977AFB200835C9D /* PreviewInfo */,
 				040BBFEB1976638300F285CA /* ResumeScrollerView */,
 				DF9402FD196B92E200411FB9 /* Test.h */,
 				DF9402FE196B92E200411FB9 /* Test.m */,
@@ -570,6 +591,7 @@
 				040BBFBE1973E07F00F285CA /* UIView+MNColorKitImages.m in Sources */,
 				040BBFC919751D0800F285CA /* ResumeColor.m in Sources */,
 				040BBFF11976647700F285CA /* ResumeScrollerViewCell.m in Sources */,
+				DF90CE3C1977D76C00835C9D /* IWishView.m in Sources */,
 				DF239C37195915B600ECB3D5 /* main.m in Sources */,
 				040BBFE41975387A00F285CA /* ResumerViewController.m in Sources */,
 				DF940313196BA2AD00411FB9 /* EGORefreshTableFootView.m in Sources */,
@@ -578,8 +600,10 @@
 				DF940314196BA2AD00411FB9 /* EGORefreshTableHeaderView.m in Sources */,
 				DFD05B16196E9B7F00BD8F44 /* SchoolMajorViewController.m in Sources */,
 				DF80F53C196CEE3D0023FCA6 /* CPKenburnsView.m in Sources */,
+				DF90CE361977AFEB00835C9D /* PersonInfoView.m in Sources */,
 				DF239C3B195915B600ECB3D5 /* HomeAppDelegate.m in Sources */,
 				040BBFC119750E2100F285CA /* GuideView.m in Sources */,
+				DF90CE391977D06E00835C9D /* SpecialtyView.m in Sources */,
 				040BBFA11973A97100F285CA /* ListTableViewCell.m in Sources */,
 				DF80F551196D34F90023FCA6 /* IntroControll.m in Sources */,
 				DF940323196BA54400411FB9 /* LeadPageViewController.m in Sources */,
