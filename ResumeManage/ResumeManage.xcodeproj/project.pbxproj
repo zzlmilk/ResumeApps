@@ -20,6 +20,9 @@
 		040BBFE41975387A00F285CA /* ResumerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFE31975387A00F285CA /* ResumerViewController.m */; };
 		040BBFE819765A9000F285CA /* Colours.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFE719765A9000F285CA /* Colours.m */; };
 		040BBFEA19765AA700F285CA /* AboutColours in Resources */ = {isa = PBXBuildFile; fileRef = 040BBFE919765AA700F285CA /* AboutColours */; };
+		040BBFEE1976639300F285CA /* ResumeScrollerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFED1976639300F285CA /* ResumeScrollerView.m */; };
+		040BBFF11976647700F285CA /* ResumeScrollerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFF01976647700F285CA /* ResumeScrollerViewCell.m */; };
+		040BBFF41977945000F285CA /* ArrowClick.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFF31977945000F285CA /* ArrowClick.m */; };
 		DF239C2B195915B600ECB3D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF239C2A195915B600ECB3D5 /* Foundation.framework */; };
 		DF239C2D195915B600ECB3D5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF239C2C195915B600ECB3D5 /* CoreGraphics.framework */; };
 		DF239C2F195915B600ECB3D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF239C2E195915B600ECB3D5 /* UIKit.framework */; };
@@ -98,6 +101,12 @@
 		040BBFE619765A9000F285CA /* Colours.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Colours.h; path = ResumeManage/Classes/Colours.h; sourceTree = SOURCE_ROOT; };
 		040BBFE719765A9000F285CA /* Colours.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Colours.m; path = ResumeManage/Classes/Colours.m; sourceTree = SOURCE_ROOT; };
 		040BBFE919765AA700F285CA /* AboutColours */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AboutColours; path = ../AboutColours; sourceTree = "<group>"; };
+		040BBFEC1976639300F285CA /* ResumeScrollerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResumeScrollerView.h; sourceTree = "<group>"; };
+		040BBFED1976639300F285CA /* ResumeScrollerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResumeScrollerView.m; sourceTree = "<group>"; };
+		040BBFEF1976647700F285CA /* ResumeScrollerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResumeScrollerViewCell.h; sourceTree = "<group>"; };
+		040BBFF01976647700F285CA /* ResumeScrollerViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResumeScrollerViewCell.m; sourceTree = "<group>"; };
+		040BBFF21977945000F285CA /* ArrowClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrowClick.h; sourceTree = "<group>"; };
+		040BBFF31977945000F285CA /* ArrowClick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrowClick.m; sourceTree = "<group>"; };
 		DF239C27195915B600ECB3D5 /* ResumeManage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResumeManage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF239C2A195915B600ECB3D5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DF239C2C195915B600ECB3D5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -233,6 +242,19 @@
 			path = Colours;
 			sourceTree = "<group>";
 		};
+		040BBFEB1976638300F285CA /* ResumeScrollerView */ = {
+			isa = PBXGroup;
+			children = (
+				040BBFEC1976639300F285CA /* ResumeScrollerView.h */,
+				040BBFED1976639300F285CA /* ResumeScrollerView.m */,
+				040BBFEF1976647700F285CA /* ResumeScrollerViewCell.h */,
+				040BBFF01976647700F285CA /* ResumeScrollerViewCell.m */,
+				040BBFF21977945000F285CA /* ArrowClick.h */,
+				040BBFF31977945000F285CA /* ArrowClick.m */,
+			);
+			path = ResumeScrollerView;
+			sourceTree = "<group>";
+		};
 		DF239C1E195915B600ECB3D5 = {
 			isa = PBXGroup;
 			children = (
@@ -353,6 +375,7 @@
 		DF9402F9196B91F200411FB9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				040BBFEB1976638300F285CA /* ResumeScrollerView */,
 				DF9402FD196B92E200411FB9 /* Test.h */,
 				DF9402FE196B92E200411FB9 /* Test.m */,
 				040BBF9F1973A97100F285CA /* ListTableViewCell.h */,
@@ -544,6 +567,7 @@
 				DFB09EFA1974C6B400BC9A5F /* Education.m in Sources */,
 				040BBFBE1973E07F00F285CA /* UIView+MNColorKitImages.m in Sources */,
 				040BBFC919751D0800F285CA /* ResumeColor.m in Sources */,
+				040BBFF11976647700F285CA /* ResumeScrollerViewCell.m in Sources */,
 				DF239C37195915B600ECB3D5 /* main.m in Sources */,
 				040BBFE41975387A00F285CA /* ResumerViewController.m in Sources */,
 				DF940313196BA2AD00411FB9 /* EGORefreshTableFootView.m in Sources */,
@@ -557,10 +581,12 @@
 				040BBFA11973A97100F285CA /* ListTableViewCell.m in Sources */,
 				DF80F551196D34F90023FCA6 /* IntroControll.m in Sources */,
 				DF940323196BA54400411FB9 /* LeadPageViewController.m in Sources */,
+				040BBFF41977945000F285CA /* ArrowClick.m in Sources */,
 				DFD05B19196EA67D00BD8F44 /* ListSectionViewController.m in Sources */,
 				040BBFAA1973B6DD00F285CA /* Personal.m in Sources */,
 				DF80F541196D140A0023FCA6 /* EducationViewController.m in Sources */,
 				DFC14DA8196A4B2400305F33 /* HomeViewController.m in Sources */,
+				040BBFEE1976639300F285CA /* ResumeScrollerView.m in Sources */,
 				040BBFA41973B54200F285CA /* Resume.m in Sources */,
 				DF80F552196D34F90023FCA6 /* IntroModel.m in Sources */,
 				040BBFBD1973E07F00F285CA /* MNColoredButton.m in Sources */,

@@ -13,6 +13,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:66/255.f green:51/255.f blue:120/255.f alpha:1.0f]];
     
 //     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];

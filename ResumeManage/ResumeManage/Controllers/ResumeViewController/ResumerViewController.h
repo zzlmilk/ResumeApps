@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
-@interface ResumerViewController : BaseViewController
+#import "ResumeScrollerView.h"
+
+
+@interface ResumerViewController : BaseViewController<ResumeScrollerViewDelegate>
+
+{
+    UIView*  _contentView1;
+    UIView * _contentView2;
+    UIView * _contentView3;
+}
 
 @end
