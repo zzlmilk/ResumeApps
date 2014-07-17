@@ -35,8 +35,8 @@
     
     self.jobCategoryArray = @[@"全职",@"兼职"];
     self.jobNameArray = @[@"PHP工程师",@"IOS工程师",@"UI网页设计师"];
-    self.wishMoneyArray = @[@"2000-4000",@"4000-6000",@"6000-8000",@"8000-10000"
-                            ,@"10000+"];
+    self.wishMoneyArray = @[@"2000-4000",@"4000-6000",@"6000-8000"
+                            ,@"8000-10000",@"10000+"];
     self.jobStatusArray = @[@"在职",@"离职",@"其他"];
     
     

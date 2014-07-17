@@ -23,8 +23,6 @@
 //绿色
 +(UIColor *)r_black;
 
-
-
 //大红
 +(UIColor *)r_red;
 
