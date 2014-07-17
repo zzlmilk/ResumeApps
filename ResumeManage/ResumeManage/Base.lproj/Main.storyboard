@@ -8,11 +8,15 @@
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController storyboardIdentifier="homeViewController" id="vXZ-lx-hvc" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Iih-wl-iRL"/>
+                        <viewControllerLayoutGuide type="bottom" id="1YM-Xk-VT0"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="MTp-jq-2ZU">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="MTp-jq-2ZU">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="1bD-xU-ZqV">
@@ -86,11 +90,15 @@
         <scene sceneID="WKd-1Q-UoE">
             <objects>
                 <viewController storyboardIdentifier="jobWishViewController" id="71G-hK-VZc" customClass="JobWishViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hn2-xn-vuc"/>
+                        <viewControllerLayoutGuide type="bottom" id="5en-ha-FOF"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="G0D-y9-lLp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="hQL-NJ-psC">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="hQL-NJ-psC">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" id="6hY-oQ-gg4">
@@ -153,11 +161,15 @@
         <scene sceneID="cFd-r3-D4L">
             <objects>
                 <viewController storyboardIdentifier="schoolMajorViewController" id="c6b-Dm-aZn" customClass="SchoolMajorViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fni-EY-A5l"/>
+                        <viewControllerLayoutGuide type="bottom" id="LT1-eu-6YG"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ubs-nf-9Dt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="WuA-Wm-7Sj">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="WuA-Wm-7Sj">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
@@ -209,6 +221,10 @@
         <scene sceneID="EyS-93-a5C">
             <objects>
                 <viewController id="1zv-Tm-Zci" customClass="ListSectionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2oA-HV-Xoy"/>
+                        <viewControllerLayoutGuide type="bottom" id="kQ7-tR-ckC"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hPb-JK-fb8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -224,11 +240,15 @@
         <scene sceneID="JSu-xV-7Zo">
             <objects>
                 <viewController storyboardIdentifier="educationViewController" id="EkF-6l-4ay" customClass="EducationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fqQ-OS-Tbb"/>
+                        <viewControllerLayoutGuide type="bottom" id="OdO-G4-IMM"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="emR-ca-GDM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="TEy-a0-MvE">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="TEy-a0-MvE">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="H0U-NY-Frd">
@@ -354,6 +374,10 @@
         <scene sceneID="nAE-ot-WcD">
             <objects>
                 <viewController id="pyW-gx-cpS" customClass="LeadPageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GJO-lT-VrO"/>
+                        <viewControllerLayoutGuide type="bottom" id="3t0-5z-2oI"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lfZ-Km-JPz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
