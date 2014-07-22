@@ -8,6 +8,9 @@
 
 #import "ResumerViewController.h"
 #import "Colours.h"
+#import "PersonInfoView.h"
+#import "SpecialtyView.h"
+#import "IWishView.h"
 
 @interface ResumerViewController ()
 {
@@ -41,7 +44,7 @@
     
     [scrollerView reloadResumeScrollerView];
     
-    [scrollerView openResumeScrollerViewCellAtIndex:0 animated:NO];
+    [scrollerView openResumeScrollerViewCellAtIndex:2 animated:NO];
     
     
     
@@ -61,14 +64,14 @@
 -(NSString *)titleForResumeScrollerViewAtIndex:(int)index{
     switch (index) {
         case 0:
-            return @"个人信息";
+            return @"我的信息";
             break;
         case 1:
-            return @"职业方向";
+            return @"我的特长";
             break;
             
         case 2:
-            return @"教育经历";
+            return @"我的态度";
             break;
         default:
             return @"";
@@ -79,14 +82,20 @@
 
 -(UIView *)viewForResumeScrollerViewContentViewAtIndex:(int)index{
     
-    _contentView1 = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 100)];
-    _contentView1.backgroundColor = [UIColor pastelBlueColor];
+    _contentView1 = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 450)];
+    _contentView1.backgroundColor = [UIColor snowColor];
+    PersonInfoView *personInfoView = [[PersonInfoView alloc]init];
+    [_contentView1 addSubview:personInfoView];
     
-    _contentView2 = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 100)];
-    _contentView2.backgroundColor = [UIColor robinEggColor];
+    _contentView2 = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 170)];
+    _contentView2.backgroundColor = [UIColor snowColor];
+    SpecialtyView *specialtyView = [[SpecialtyView alloc]init];
+    [_contentView2 addSubview:specialtyView];
     
-    _contentView3 = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 100)];
-    _contentView3.backgroundColor = [UIColor steelBlueColor];
+    _contentView3 = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 230)];
+    _contentView3.backgroundColor = [UIColor snowColor];
+    IWishView *iWishView = [[IWishView alloc]init];
+    [_contentView3 addSubview:iWishView];
 
     
     switch (index) {
@@ -122,7 +131,6 @@
 
 -(void)didClickResumeScrollerViewCellAtIndex:(int)index isNowOpen:(BOOL)open{
     
-    [scrollerView setContentSize:CGSizeMake(300, 30)];
 
 }
 
