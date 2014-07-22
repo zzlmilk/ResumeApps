@@ -10,10 +10,12 @@
 #import "Resume.h"
 
 
+
 #import "HomeViewController.h"
 #import "JobWishViewController.h"
 #import "EducationViewController.h"
 #import "ListTableViewCell.h"
+
 
 @interface ListSectionViewController ()
 
@@ -71,11 +73,6 @@ static CGFloat kImageOriginHight = 300.f;
     [resumeAttributes  addObject:@"2"];
     
     
-    
-    
-    
-   
-    
 
     
     tableView = ({
@@ -83,7 +80,8 @@ static CGFloat kImageOriginHight = 300.f;
         _tableView.delegate =self;
         _tableView.dataSource=self;
         _tableView.contentInset = UIEdgeInsetsMake(kImageOriginHight, 0, 0, 0);
-        _expandZoomImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"image4"]];
+        _expandZoomImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"image1"]];
+      //  _expandZoomImageView.contentMode = UIViewContentModeRedraw;
         _expandZoomImageView.frame = CGRectMake(0, 0, 320, kImageOriginHight);
         [_tableView addSubview:_expandZoomImageView];
         _tableView;
@@ -110,6 +108,7 @@ static CGFloat kImageOriginHight = 300.f;
 }
 
 
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return resumeAttributes.count;
 }
@@ -122,9 +121,7 @@ static CGFloat kImageOriginHight = 300.f;
     if (!cell) {
         cell = [[ListTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
     }
-
-
-
+    
     
     NSString * att = [resumeAttributes objectAtIndex:indexPath.row];
     
@@ -180,6 +177,8 @@ static CGFloat kImageOriginHight = 300.f;
 
 
 }
+
+
 
 
 

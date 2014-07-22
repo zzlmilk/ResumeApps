@@ -9,9 +9,8 @@
 #import "ResumeScrollerView.h"
 #import "Colours.h"
 
+
 @implementation ResumeScrollerView
-
-
 
 - (instancetype)initWithFrame:(CGRect)frame
 {

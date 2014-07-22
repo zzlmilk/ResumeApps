@@ -12,6 +12,8 @@
 #import "SchoolMajorViewController.h"
 #import "MNColorKit.h"
 
+#import "CollectViewController.h"
+
 
 #import "ResumerViewController.h"
 
@@ -51,6 +53,8 @@
     [self.view addSubview:guideView];
     
     
+    
+    
 }
 
 
@@ -58,10 +62,17 @@
 -(void)GuideDidFinish{
     
     
+    CollectViewController *collectViewController =[[CollectViewController alloc]init];
+    
+    [self presentViewController:collectViewController animated:YES completion:^{
+        
+    }];
+    /*
     SchoolMajorViewController *schoolMajorVC = [self.storyboard instantiateViewControllerWithIdentifier:@"schoolMajorViewController"];
     
     [self presentViewController:schoolMajorVC animated:YES completion:^{
     }];
+     */
 }
 
 

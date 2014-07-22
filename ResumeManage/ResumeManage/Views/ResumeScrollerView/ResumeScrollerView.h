@@ -41,7 +41,7 @@
 // Methods
 -(void)reloadResumeScrollerView;
 -(ResumeScrollerViewCell *)resumeScrollerViewCelForIndex:(int)index;
--(void)scrollToResumeScrollerViewCellAtIndex:(int)index animated:(BOOL)animated;
+//-(void)scrollToResumeScrollerViewCellAtIndex:(int)index animated:(BOOL)animated;
 
 -(UIView *)contentViewForCellAtIndex:(int)index;
 

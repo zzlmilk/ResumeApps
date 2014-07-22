@@ -10,11 +10,18 @@
 #import "BaseViewController.h"
 
 
+
 @interface SchoolMajorViewController : BaseViewController<UITextFieldDelegate,UIScrollViewDelegate>
 {
+    
     NSLocale *dateLocale;
     UIDatePicker *datePicker;
+    
 }
+
+
+
+
 
 @property (strong, nonatomic)IBOutlet UIScrollView *schoolMajorScrollView;
 @property (strong, nonatomic)IBOutlet UITextField *schoolTextField;//学校

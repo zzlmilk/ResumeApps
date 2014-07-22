@@ -19,10 +19,28 @@
 		040BBFC919751D0800F285CA /* ResumeColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFC819751D0800F285CA /* ResumeColor.m */; };
 		040BBFE41975387A00F285CA /* ResumerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFE31975387A00F285CA /* ResumerViewController.m */; };
 		040BBFE819765A9000F285CA /* Colours.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFE719765A9000F285CA /* Colours.m */; };
-		040BBFEA19765AA700F285CA /* AboutColours in Resources */ = {isa = PBXBuildFile; fileRef = 040BBFE919765AA700F285CA /* AboutColours */; };
 		040BBFEE1976639300F285CA /* ResumeScrollerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFED1976639300F285CA /* ResumeScrollerView.m */; };
 		040BBFF11976647700F285CA /* ResumeScrollerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFF01976647700F285CA /* ResumeScrollerViewCell.m */; };
 		040BBFF41977945000F285CA /* ArrowClick.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BBFF31977945000F285CA /* ArrowClick.m */; };
+		040BC0021977CCF200F285CA /* CollectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BC0011977CCF200F285CA /* CollectViewController.m */; };
+		040BC0041977D2FB00F285CA /* TestHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040BC0031977D2FB00F285CA /* TestHeader.xib */; };
+		040BC00B1977D35D00F285CA /* AMBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BC0061977D35D00F285CA /* AMBlurView.m */; };
+		040BC00C1977D35D00F285CA /* MYBlurIntroductionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BC0081977D35D00F285CA /* MYBlurIntroductionView.m */; };
+		040BC00D1977D35D00F285CA /* MYIntroductionPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BC00A1977D35D00F285CA /* MYIntroductionPanel.m */; };
+		040BC00F1977D39C00F285CA /* TestPanel3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040BC00E1977D39C00F285CA /* TestPanel3.xib */; };
+		040BC0141977D3C100F285CA /* MYCustomPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BC0121977D3C100F285CA /* MYCustomPanel.m */; };
+		040BC0151977D3C100F285CA /* MYCustomPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040BC0131977D3C100F285CA /* MYCustomPanel.xib */; };
+		040BC0181977D43B00F285CA /* FirstPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BC0171977D43B00F285CA /* FirstPanel.m */; };
+		040BC01A1977D52700F285CA /* FirstPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040BC0191977D52700F285CA /* FirstPanel.xib */; };
+		040BC02B1977DC9300F285CA /* MZFormSheetBackgroundWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BC01E1977DC9300F285CA /* MZFormSheetBackgroundWindow.m */; };
+		040BC02C1977DC9300F285CA /* MZFormSheetBackgroundWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BC0201977DC9300F285CA /* MZFormSheetBackgroundWindowViewController.m */; };
+		040BC02D1977DC9300F285CA /* MZFormSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BC0221977DC9300F285CA /* MZFormSheetController.m */; };
+		040BC02E1977DC9300F285CA /* MZFormSheetSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BC0241977DC9300F285CA /* MZFormSheetSegue.m */; };
+		040BC02F1977DC9300F285CA /* MZTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BC0261977DC9300F285CA /* MZTransition.m */; };
+		040BC0301977DC9300F285CA /* UIImage+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BC0281977DC9300F285CA /* UIImage+Additional.m */; };
+		040BC0311977DC9300F285CA /* UIViewController+TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BC02A1977DC9300F285CA /* UIViewController+TargetViewController.m */; };
+		040BC0371977DC9A00F285CA /* MZAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BC0341977DC9900F285CA /* MZAppearance.m */; };
+		040BC0381977DC9A00F285CA /* NSInvocation+Copy.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BC0361977DC9900F285CA /* NSInvocation+Copy.m */; };
 		DF239C2B195915B600ECB3D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF239C2A195915B600ECB3D5 /* Foundation.framework */; };
 		DF239C2D195915B600ECB3D5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF239C2C195915B600ECB3D5 /* CoreGraphics.framework */; };
 		DF239C2F195915B600ECB3D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF239C2E195915B600ECB3D5 /* UIKit.framework */; };
@@ -101,13 +119,46 @@
 		040BBFE31975387A00F285CA /* ResumerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResumerViewController.m; sourceTree = "<group>"; };
 		040BBFE619765A9000F285CA /* Colours.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Colours.h; path = ResumeManage/Classes/Colours.h; sourceTree = SOURCE_ROOT; };
 		040BBFE719765A9000F285CA /* Colours.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Colours.m; path = ResumeManage/Classes/Colours.m; sourceTree = SOURCE_ROOT; };
-		040BBFE919765AA700F285CA /* AboutColours */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AboutColours; path = ../AboutColours; sourceTree = "<group>"; };
 		040BBFEC1976639300F285CA /* ResumeScrollerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResumeScrollerView.h; sourceTree = "<group>"; };
 		040BBFED1976639300F285CA /* ResumeScrollerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResumeScrollerView.m; sourceTree = "<group>"; };
 		040BBFEF1976647700F285CA /* ResumeScrollerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResumeScrollerViewCell.h; sourceTree = "<group>"; };
 		040BBFF01976647700F285CA /* ResumeScrollerViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResumeScrollerViewCell.m; sourceTree = "<group>"; };
 		040BBFF21977945000F285CA /* ArrowClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrowClick.h; sourceTree = "<group>"; };
 		040BBFF31977945000F285CA /* ArrowClick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrowClick.m; sourceTree = "<group>"; };
+		040BC0001977CCF200F285CA /* CollectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectViewController.h; sourceTree = "<group>"; };
+		040BC0011977CCF200F285CA /* CollectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectViewController.m; sourceTree = "<group>"; };
+		040BC0031977D2FB00F285CA /* TestHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestHeader.xib; sourceTree = "<group>"; };
+		040BC0051977D35D00F285CA /* AMBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMBlurView.h; sourceTree = "<group>"; };
+		040BC0061977D35D00F285CA /* AMBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMBlurView.m; sourceTree = "<group>"; };
+		040BC0071977D35D00F285CA /* MYBlurIntroductionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYBlurIntroductionView.h; sourceTree = "<group>"; };
+		040BC0081977D35D00F285CA /* MYBlurIntroductionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYBlurIntroductionView.m; sourceTree = "<group>"; };
+		040BC0091977D35D00F285CA /* MYIntroductionPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYIntroductionPanel.h; sourceTree = "<group>"; };
+		040BC00A1977D35D00F285CA /* MYIntroductionPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYIntroductionPanel.m; sourceTree = "<group>"; };
+		040BC00E1977D39C00F285CA /* TestPanel3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestPanel3.xib; sourceTree = "<group>"; };
+		040BC0111977D3C100F285CA /* MYCustomPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCustomPanel.h; sourceTree = "<group>"; };
+		040BC0121977D3C100F285CA /* MYCustomPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCustomPanel.m; sourceTree = "<group>"; };
+		040BC0131977D3C100F285CA /* MYCustomPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYCustomPanel.xib; sourceTree = "<group>"; };
+		040BC0161977D43B00F285CA /* FirstPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstPanel.h; sourceTree = "<group>"; };
+		040BC0171977D43B00F285CA /* FirstPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstPanel.m; sourceTree = "<group>"; };
+		040BC0191977D52700F285CA /* FirstPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstPanel.xib; sourceTree = "<group>"; };
+		040BC01D1977DC9300F285CA /* MZFormSheetBackgroundWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZFormSheetBackgroundWindow.h; sourceTree = "<group>"; };
+		040BC01E1977DC9300F285CA /* MZFormSheetBackgroundWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZFormSheetBackgroundWindow.m; sourceTree = "<group>"; };
+		040BC01F1977DC9300F285CA /* MZFormSheetBackgroundWindowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZFormSheetBackgroundWindowViewController.h; sourceTree = "<group>"; };
+		040BC0201977DC9300F285CA /* MZFormSheetBackgroundWindowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZFormSheetBackgroundWindowViewController.m; sourceTree = "<group>"; };
+		040BC0211977DC9300F285CA /* MZFormSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZFormSheetController.h; sourceTree = "<group>"; };
+		040BC0221977DC9300F285CA /* MZFormSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZFormSheetController.m; sourceTree = "<group>"; };
+		040BC0231977DC9300F285CA /* MZFormSheetSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZFormSheetSegue.h; sourceTree = "<group>"; };
+		040BC0241977DC9300F285CA /* MZFormSheetSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZFormSheetSegue.m; sourceTree = "<group>"; };
+		040BC0251977DC9300F285CA /* MZTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZTransition.h; sourceTree = "<group>"; };
+		040BC0261977DC9300F285CA /* MZTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZTransition.m; sourceTree = "<group>"; };
+		040BC0271977DC9300F285CA /* UIImage+Additional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Additional.h"; sourceTree = "<group>"; };
+		040BC0281977DC9300F285CA /* UIImage+Additional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Additional.m"; sourceTree = "<group>"; };
+		040BC0291977DC9300F285CA /* UIViewController+TargetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TargetViewController.h"; sourceTree = "<group>"; };
+		040BC02A1977DC9300F285CA /* UIViewController+TargetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TargetViewController.m"; sourceTree = "<group>"; };
+		040BC0331977DC9900F285CA /* MZAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZAppearance.h; sourceTree = "<group>"; };
+		040BC0341977DC9900F285CA /* MZAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZAppearance.m; sourceTree = "<group>"; };
+		040BC0351977DC9900F285CA /* NSInvocation+Copy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+Copy.h"; sourceTree = "<group>"; };
+		040BC0361977DC9900F285CA /* NSInvocation+Copy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+Copy.m"; sourceTree = "<group>"; };
 		DF239C27195915B600ECB3D5 /* ResumeManage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResumeManage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF239C2A195915B600ECB3D5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DF239C2C195915B600ECB3D5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -257,6 +308,85 @@
 			path = ResumeScrollerView;
 			sourceTree = "<group>";
 		};
+		040BBFF51977B2F200F285CA /* CollectViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				040BC0001977CCF200F285CA /* CollectViewController.h */,
+				040BC0011977CCF200F285CA /* CollectViewController.m */,
+			);
+			path = CollectViewControllers;
+			sourceTree = "<group>";
+		};
+		040BBFF91977CC3000F285CA /* MYBlurIntroductionView */ = {
+			isa = PBXGroup;
+			children = (
+				040BC0101977D3B900F285CA /* SubclassPanel */,
+				040BC0031977D2FB00F285CA /* TestHeader.xib */,
+				040BC00E1977D39C00F285CA /* TestPanel3.xib */,
+				040BC0051977D35D00F285CA /* AMBlurView.h */,
+				040BC0061977D35D00F285CA /* AMBlurView.m */,
+				040BC0071977D35D00F285CA /* MYBlurIntroductionView.h */,
+				040BC0081977D35D00F285CA /* MYBlurIntroductionView.m */,
+				040BC0091977D35D00F285CA /* MYIntroductionPanel.h */,
+				040BC00A1977D35D00F285CA /* MYIntroductionPanel.m */,
+			);
+			path = MYBlurIntroductionView;
+			sourceTree = "<group>";
+		};
+		040BC0101977D3B900F285CA /* SubclassPanel */ = {
+			isa = PBXGroup;
+			children = (
+				040BC0111977D3C100F285CA /* MYCustomPanel.h */,
+				040BC0121977D3C100F285CA /* MYCustomPanel.m */,
+				040BC0131977D3C100F285CA /* MYCustomPanel.xib */,
+				040BC0161977D43B00F285CA /* FirstPanel.h */,
+				040BC0171977D43B00F285CA /* FirstPanel.m */,
+				040BC0191977D52700F285CA /* FirstPanel.xib */,
+			);
+			path = SubclassPanel;
+			sourceTree = "<group>";
+		};
+		040BC01B1977DC7500F285CA /* MZFormSheetController */ = {
+			isa = PBXGroup;
+			children = (
+				040BC0321977DC9900F285CA /* Additional */,
+				040BC01C1977DC9300F285CA /* MZFormSheetController */,
+			);
+			path = MZFormSheetController;
+			sourceTree = "<group>";
+		};
+		040BC01C1977DC9300F285CA /* MZFormSheetController */ = {
+			isa = PBXGroup;
+			children = (
+				040BC01D1977DC9300F285CA /* MZFormSheetBackgroundWindow.h */,
+				040BC01E1977DC9300F285CA /* MZFormSheetBackgroundWindow.m */,
+				040BC01F1977DC9300F285CA /* MZFormSheetBackgroundWindowViewController.h */,
+				040BC0201977DC9300F285CA /* MZFormSheetBackgroundWindowViewController.m */,
+				040BC0211977DC9300F285CA /* MZFormSheetController.h */,
+				040BC0221977DC9300F285CA /* MZFormSheetController.m */,
+				040BC0231977DC9300F285CA /* MZFormSheetSegue.h */,
+				040BC0241977DC9300F285CA /* MZFormSheetSegue.m */,
+				040BC0251977DC9300F285CA /* MZTransition.h */,
+				040BC0261977DC9300F285CA /* MZTransition.m */,
+				040BC0271977DC9300F285CA /* UIImage+Additional.h */,
+				040BC0281977DC9300F285CA /* UIImage+Additional.m */,
+				040BC0291977DC9300F285CA /* UIViewController+TargetViewController.h */,
+				040BC02A1977DC9300F285CA /* UIViewController+TargetViewController.m */,
+			);
+			path = MZFormSheetController;
+			sourceTree = "<group>";
+		};
+		040BC0321977DC9900F285CA /* Additional */ = {
+			isa = PBXGroup;
+			children = (
+				040BC0331977DC9900F285CA /* MZAppearance.h */,
+				040BC0341977DC9900F285CA /* MZAppearance.m */,
+				040BC0351977DC9900F285CA /* NSInvocation+Copy.h */,
+				040BC0361977DC9900F285CA /* NSInvocation+Copy.m */,
+			);
+			path = Additional;
+			sourceTree = "<group>";
+		};
 		DF239C1E195915B600ECB3D5 = {
 			isa = PBXGroup;
 			children = (
@@ -377,6 +507,7 @@
 		DF9402F9196B91F200411FB9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				040BBFF91977CC3000F285CA /* MYBlurIntroductionView */,
 				040BBFEB1976638300F285CA /* ResumeScrollerView */,
 				DF9402FD196B92E200411FB9 /* Test.h */,
 				DF9402FE196B92E200411FB9 /* Test.m */,
@@ -418,6 +549,7 @@
 		DFC14DA2196A4AD600305F33 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				040BBFF51977B2F200F285CA /* CollectViewControllers */,
 				040BBFE11975376500F285CA /* ResumeViewController */,
 				040BBFB11973DA8200F285CA /* BaseViewControllers */,
 				DFC14DA6196A4B2400305F33 /* HomeViewController.h */,
@@ -448,6 +580,7 @@
 		DFD52C371963F1C9001F1DF3 /* ThreeParty */ = {
 			isa = PBXGroup;
 			children = (
+				040BC01B1977DC7500F285CA /* MZFormSheetController */,
 				040BBFB51973E07F00F285CA /* MNColorKit */,
 				DFD05B10196E43C600BD8F44 /* SuggestionsList */,
 				DF80F54A196D34F90023FCA6 /* IntroControll */,
@@ -537,14 +670,18 @@
 				DF94031D196BA39100411FB9 /* Main.storyboard in Resources */,
 				DF239C43195915B600ECB3D5 /* Images.xcassets in Resources */,
 				DF940315196BA2AD00411FB9 /* blackArrow.png in Resources */,
+				040BC0151977D3C100F285CA /* MYCustomPanel.xib in Resources */,
 				DF239C35195915B600ECB3D5 /* InfoPlist.strings in Resources */,
 				DF94031C196BA2AD00411FB9 /* whiteArrow@2x.png in Resources */,
 				DF94031A196BA2AD00411FB9 /* grayArrow@2x.png in Resources */,
+				040BC01A1977D52700F285CA /* FirstPanel.xib in Resources */,
+				040BC00F1977D39C00F285CA /* TestPanel3.xib in Resources */,
 				DF940318196BA2AD00411FB9 /* blueArrow@2x.png in Resources */,
 				DF940317196BA2AD00411FB9 /* blueArrow.png in Resources */,
 				DF940316196BA2AD00411FB9 /* blackArrow@2x.png in Resources */,
 				DF94031B196BA2AD00411FB9 /* whiteArrow.png in Resources */,
 				DFCAC3AE19765E8900107703 /* AboutColours in Resources */,
+				040BC0041977D2FB00F285CA /* TestHeader.xib in Resources */,
 				DF940319196BA2AD00411FB9 /* grayArrow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -566,22 +703,29 @@
 			files = (
 				DFD05B13196E43C600BD8F44 /* SuggestionsList.m in Sources */,
 				040BBFB01973BEC700F285CA /* Objective.m in Sources */,
+				040BC0301977DC9300F285CA /* UIImage+Additional.m in Sources */,
+				040BC02D1977DC9300F285CA /* MZFormSheetController.m in Sources */,
 				DFB09EFA1974C6B400BC9A5F /* Education.m in Sources */,
 				040BBFBE1973E07F00F285CA /* UIView+MNColorKitImages.m in Sources */,
 				040BBFC919751D0800F285CA /* ResumeColor.m in Sources */,
 				040BBFF11976647700F285CA /* ResumeScrollerViewCell.m in Sources */,
+				040BC02F1977DC9300F285CA /* MZTransition.m in Sources */,
 				DF239C37195915B600ECB3D5 /* main.m in Sources */,
 				040BBFE41975387A00F285CA /* ResumerViewController.m in Sources */,
 				DF940313196BA2AD00411FB9 /* EGORefreshTableFootView.m in Sources */,
+				040BC0181977D43B00F285CA /* FirstPanel.m in Sources */,
 				DF9402FF196B92E200411FB9 /* Test.m in Sources */,
 				DFC14DA5196A4AFC00305F33 /* JobWishViewController.m in Sources */,
 				DF940314196BA2AD00411FB9 /* EGORefreshTableHeaderView.m in Sources */,
 				DFD05B16196E9B7F00BD8F44 /* SchoolMajorViewController.m in Sources */,
+				040BC00D1977D35D00F285CA /* MYIntroductionPanel.m in Sources */,
 				DF80F53C196CEE3D0023FCA6 /* CPKenburnsView.m in Sources */,
 				DF239C3B195915B600ECB3D5 /* HomeAppDelegate.m in Sources */,
 				040BBFC119750E2100F285CA /* GuideView.m in Sources */,
 				040BBFA11973A97100F285CA /* ListTableViewCell.m in Sources */,
 				DF80F551196D34F90023FCA6 /* IntroControll.m in Sources */,
+				040BC02B1977DC9300F285CA /* MZFormSheetBackgroundWindow.m in Sources */,
+				040BC0141977D3C100F285CA /* MYCustomPanel.m in Sources */,
 				DF940323196BA54400411FB9 /* LeadPageViewController.m in Sources */,
 				040BBFF41977945000F285CA /* ArrowClick.m in Sources */,
 				DFD05B19196EA67D00BD8F44 /* ListSectionViewController.m in Sources */,
@@ -592,11 +736,19 @@
 				040BBFA41973B54200F285CA /* Resume.m in Sources */,
 				DF80F552196D34F90023FCA6 /* IntroModel.m in Sources */,
 				040BBFBD1973E07F00F285CA /* MNColoredButton.m in Sources */,
+				040BC02E1977DC9300F285CA /* MZFormSheetSegue.m in Sources */,
+				040BC0311977DC9300F285CA /* UIViewController+TargetViewController.m in Sources */,
+				040BC02C1977DC9300F285CA /* MZFormSheetBackgroundWindowViewController.m in Sources */,
+				040BC0021977CCF200F285CA /* CollectViewController.m in Sources */,
 				040BBFE819765A9000F285CA /* Colours.m in Sources */,
+				040BC0371977DC9A00F285CA /* MZAppearance.m in Sources */,
 				DF940320196BA4D100411FB9 /* ModelTest.m in Sources */,
+				040BC00C1977D35D00F285CA /* MYBlurIntroductionView.m in Sources */,
 				040BBFAD1973B95400F285CA /* Base.m in Sources */,
 				DF80F553196D34F90023FCA6 /* IntroView.m in Sources */,
 				040BBFB41973DA9500F285CA /* BaseViewController.m in Sources */,
+				040BC00B1977D35D00F285CA /* AMBlurView.m in Sources */,
+				040BC0381977DC9A00F285CA /* NSInvocation+Copy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
