@@ -41,7 +41,7 @@
         relatedPaidIndustryLabel.backgroundColor = [UIColor clearColor];
         [self addSubview:relatedPaidIndustryLabel];
         
-        relatedPaidIndustryTextLabel = [[UILabel alloc]initWithFrame:CGRectMake(110, 140, 200, 70)];
+        relatedPaidIndustryTextLabel = [[UILabel alloc]initWithFrame:CGRectMake(110, 145, 200, 70)];
         relatedPaidIndustryTextLabel.numberOfLines =0;
         relatedPaidIndustryTextLabel.backgroundColor = [UIColor clearColor];
         relatedPaidIndustryTextLabel.text = @"汽车制造页，移动互联网，UI设计师 , 现代物流，电子商务";
