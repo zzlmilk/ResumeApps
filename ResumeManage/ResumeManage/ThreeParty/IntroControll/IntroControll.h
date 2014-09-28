@@ -1,6 +1,5 @@
 #import <UIKit/UIKit.h>
 #import "IntroView.h"
-#import "LeadPageViewController.h"
 
 
 @interface IntroControll : UIView<UIScrollViewDelegate> {

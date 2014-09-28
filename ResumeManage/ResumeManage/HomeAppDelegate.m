@@ -14,13 +14,18 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:66/255.f green:51/255.f blue:120/255.f alpha:1.0f]];
+    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
     
-//     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+    [[UINavigationBar appearance] setBarTintColor:RGBACOLOR(68, 102, 153, 1.0)];
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
+    
     return YES;
 }
-
-
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

@@ -1,6 +1,4 @@
 #import "IntroControll.h"
-#import "LeadPageViewController.h"
-#import "ListSectionViewController.h"
 
 @implementation IntroControll
 
@@ -44,6 +42,7 @@
         _scrollView.showsHorizontalScrollIndicator = NO;
         _scrollView.showsVerticalScrollIndicator = NO;
         _scrollView.delegate = self;
+        //_scrollView.scrollEnabled = NO;
         [self addSubview:_scrollView];
         
         
@@ -52,8 +51,8 @@
         pageControl = [[UIPageControl alloc] init];
         pageControl.numberOfPages = pagesArray.count;
         [pageControl sizeToFit];
-        [pageControl setCenter:CGPointMake(frame.size.width/2.0, frame.size.height-110)];
-        [self addSubview:pageControl];
+        [pageControl setCenter:CGPointMake(frame.size.width/2.0, frame.size.height-40)];
+        //[self addSubview:pageControl];
         
         //Create pages
         pages = pagesArray;
@@ -135,7 +134,6 @@
 
 
 - (void)scrollViewDidScroll:(UIScrollView *)scroll {
-    
     
     [self initShow];
 }
