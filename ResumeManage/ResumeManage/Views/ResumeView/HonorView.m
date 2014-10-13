@@ -57,9 +57,16 @@
         _honorPlaceholderLabel3.textColor = RGBACOLOR(199, 199, 205, 1);
         [self addSubview:_honorPlaceholderLabel3];
 
-        
     }
     return self;
+}
+
+- (BOOL)textViewShouldBeginEditing:(UITextView *)textView{
+    
+    _honorPlaceholderLabel1.text = @"";
+    _honorPlaceholderLabel2.text = @"";
+    _honorPlaceholderLabel3.text = @"";
+    return YES;
 }
 
 /*

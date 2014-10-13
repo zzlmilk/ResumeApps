@@ -28,6 +28,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    UIBarButtonItem *addItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:nil];
+    
+    self.navigationItem.rightBarButtonItem = addItem;
+    
+    
     _defultTempView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"defaultTemp"]];
 }
 

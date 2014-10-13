@@ -57,7 +57,7 @@
         surnameText = [[UITextField alloc] initWithFrame:CGRectMake(80, 220, 200, 38)];
         [surnameText setBorderStyle:UITextBorderStyleNone];
         surnameText.tag = 1;
-        surnameText.placeholder = @"你的姓";
+        surnameText.placeholder = @"你的姓名";
         surnameText.delegate = self;
         surnameText.textColor = [UIColor whiteColor];
         [surnameText setValue:RGBACOLOR(255, 255, 255, 0.7f)

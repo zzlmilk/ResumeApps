@@ -7,6 +7,7 @@
 //
 
 #import "GenderAboutndustryView.h"
+#import "Industry.h"
 
 @implementation GenderAboutndustryView
 
@@ -47,7 +48,9 @@
         
         UIButton *genderButton = [[UIButton alloc]init];
         genderButton.frame =CGRectMake(36, 220, rectFrame.size.width-40, 38);
-        _genderTitle = @"女";
+        
+        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        _genderTitle = [userDefaults stringForKey:@"genderString"];
         genderButton.backgroundColor = [UIColor clearColor];
         genderButton.titleLabel.font = [UIFont boldSystemFontOfSize:18.0f];
         [genderButton setTitle:_genderTitle forState:UIControlStateNormal];
@@ -63,8 +66,10 @@
         
         UILabel *aboutOccupationLabelOne = [[UILabel alloc]init];
         aboutOccupationLabelOne.frame =CGRectMake(40, 364, rectFrame.size.width-107, 16);
+        aboutOccupationLabelOne.text = [userDefaults stringForKey:@"heightIndustryString"];
         aboutOccupationLabelOne.text = @"1.汽车制造业";
         aboutOccupationLabelOne.textColor = RGBACOLOR(255,255,255,0.7f);
+        //aboutOccupationLabelOne.backgroundColor = [UIColor redColor];
         [self addSubview:aboutOccupationLabelOne];
         
         UILabel *aboutOccupationLabelTwo = [[UILabel alloc]init];
@@ -83,6 +88,7 @@
     }
     return self;
 }
+
 
 //修改系统预测性别
 -(void)editGender:(UIButton *)sender{

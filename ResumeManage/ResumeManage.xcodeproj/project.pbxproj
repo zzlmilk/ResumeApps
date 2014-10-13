@@ -21,6 +21,7 @@
 		040BC0311977DC9300F285CA /* UIViewController+TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BC02A1977DC9300F285CA /* UIViewController+TargetViewController.m */; };
 		040BC0371977DC9A00F285CA /* MZAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BC0341977DC9900F285CA /* MZAppearance.m */; };
 		040BC0381977DC9A00F285CA /* NSInvocation+Copy.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BC0361977DC9900F285CA /* NSInvocation+Copy.m */; };
+		DF1781A619D90BC00063D6F9 /* Industry.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1781A519D90BC00063D6F9 /* Industry.m */; };
 		DF18D57519CFB8D100D16212 /* ResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF18D57419CFB8D100D16212 /* ResumeViewController.m */; };
 		DF18D58019CFC3A800D16212 /* ResumeView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF18D57F19CFC3A800D16212 /* ResumeView.m */; };
 		DF18D58319CFC3C300D16212 /* PersonalView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF18D58219CFC3C300D16212 /* PersonalView.m */; };
@@ -158,6 +159,8 @@
 		040BC0341977DC9900F285CA /* MZAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZAppearance.m; sourceTree = "<group>"; };
 		040BC0351977DC9900F285CA /* NSInvocation+Copy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+Copy.h"; sourceTree = "<group>"; };
 		040BC0361977DC9900F285CA /* NSInvocation+Copy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+Copy.m"; sourceTree = "<group>"; };
+		DF1781A419D90BC00063D6F9 /* Industry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Industry.h; sourceTree = "<group>"; };
+		DF1781A519D90BC00063D6F9 /* Industry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Industry.m; sourceTree = "<group>"; };
 		DF18D57319CFB8D100D16212 /* ResumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResumeViewController.h; sourceTree = "<group>"; };
 		DF18D57419CFB8D100D16212 /* ResumeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResumeViewController.m; sourceTree = "<group>"; };
 		DF18D57E19CFC3A800D16212 /* ResumeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResumeView.h; sourceTree = "<group>"; };
@@ -692,6 +695,8 @@
 				DF3A240319C8174600E54303 /* Home.m */,
 				DFE2CA1E19C927A8009D4B19 /* User.h */,
 				DFE2CA2119C9280D009D4B19 /* User.m */,
+				DF1781A419D90BC00063D6F9 /* Industry.h */,
+				DF1781A519D90BC00063D6F9 /* Industry.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1035,6 +1040,7 @@
 				040BC0311977DC9300F285CA /* UIViewController+TargetViewController.m in Sources */,
 				040BC02C1977DC9300F285CA /* MZFormSheetBackgroundWindowViewController.m in Sources */,
 				040BBFE819765A9000F285CA /* Colours.m in Sources */,
+				DF1781A619D90BC00063D6F9 /* Industry.m in Sources */,
 				040BC0371977DC9A00F285CA /* MZAppearance.m in Sources */,
 				DF80F553196D34F90023FCA6 /* IntroView.m in Sources */,
 				DFB287D619D41FFE00EC7A7F /* AssessmentView.m in Sources */,

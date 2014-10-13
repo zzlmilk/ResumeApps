@@ -26,7 +26,7 @@
         MajorAndHobbyView *majorAndHobbyView = [[MajorAndHobbyView alloc]init];
         majorAndHobbyView.frame =CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
 
-        IntroModel *model1 = [[IntroModel alloc] initWithTitle:nil description:nil image:@"beijing1" view:majorAndHobbyView];
+        IntroModel *model1 = [[IntroModel alloc] initWithTitle:nil description:nil image:@"qiepian1" view:majorAndHobbyView];
         
         GenderAboutndustryView *genderAboutndustryView = [[GenderAboutndustryView alloc]init];
         genderAboutndustryView.frame =CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);

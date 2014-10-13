@@ -17,8 +17,9 @@
     if (self) {
         // Initialization code
         
-        _educationArray = [[NSArray alloc]initWithObjects:@"专 科",
-                           @"本 科",@"研究生",@"博 士",@"其 他",@"保 密",
+        //均从1 开始
+        _educationArray = [[NSArray alloc]initWithObjects:@"初中",
+                           @"高中",@"中技",@"中专",@"大专",@"本科",@"MBA",@"硕士",@"博 士",@"其 他",@"保 密",
                            nil];
         
         _workExperienceArray =[[NSArray alloc]initWithObjects:@"从0开始",

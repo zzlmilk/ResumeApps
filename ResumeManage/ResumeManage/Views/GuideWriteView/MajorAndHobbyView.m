@@ -8,6 +8,8 @@
 
 #import "MajorAndHobbyView.h"
 #import "AHKActionSheet.h"
+#import "Industry.h"
+#import "GenderAboutndustryView.h"
 
 @implementation MajorAndHobbyView
 
@@ -18,66 +20,34 @@
         
         // Initialization code
         
-        _majorArray = [[NSArray alloc]initWithObjects:@"计算机",
-                       @"管 理",@"工 程",@"法 学",@"历 史",@"教 育",
-                       @"医 疗",nil];
+        _majorArray = [[NSArray alloc]initWithObjects:@"计算机网络",
+                       @"计算机应用",@"软件技术",@"电子商务",@"工商企业管理",@"UI设计",@"土木工程",@"建筑环境与能源应用工程",@"给排水科学与工程",@"建筑电气与智能化",nil];
         
         _hobbyArray = [[NSArray alloc]initWithObjects:@"体 育",
                        @"看 书", @"旅 游",@"美 食",@"画 画",@"唱 歌",
                        @"跳 舞",@"电视剧",nil];
         
-
         CGRect rectFrame = [ UIScreen mainScreen ].applicationFrame;
-
-        UILabel *descriptionOneLabel = [[UILabel alloc]init];
-        descriptionOneLabel.frame = CGRectMake(25, 100, rectFrame.size.width-70, 61);
-        descriptionOneLabel.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"wenzi"]];
-        [self addSubview:descriptionOneLabel];
-        
-        UILabel *promptBorderLabel = [[UILabel alloc]init];
-        promptBorderLabel.frame = CGRectMake(37, 227, rectFrame.size.width-37, 38);
-        promptBorderLabel.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"dian"]];
-        [self addSubview:promptBorderLabel];
-        
-        UILabel *oneNumberLabel = [[UILabel alloc]init];
-        oneNumberLabel.frame = CGRectMake(44, 220, 10, 35.5);
-        oneNumberLabel.text = @"1";
-        oneNumberLabel.textColor = [UIColor whiteColor];
-        oneNumberLabel.backgroundColor = [UIColor clearColor];
-        [self addSubview:oneNumberLabel];
-        
         
         majorButton = [[UIButton alloc]init];
-        majorButton.frame = CGRectMake(72, 222, rectFrame.size.width-240, 35.5);
+        majorButton.frame = CGRectMake(92, 370, rectFrame.size.width-80, 35.5);
+        majorButton.backgroundColor = [UIColor clearColor];
         [majorButton setTitle:@"你的专业" forState:UIControlStateNormal];
         [majorButton addTarget:self action:@selector(chooseMajorAndHobbyList:) forControlEvents:UIControlEventTouchUpInside];
+        majorButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         majorButton.tag = 1;
         majorButton.titleLabel.font = [UIFont boldSystemFontOfSize: 18.0];
-        [majorButton setTitleColor:RGBACOLOR(255, 255, 255, 0.7f) forState:UIControlStateNormal];
+        [majorButton setTitleColor:RGBACOLOR(78, 145, 192, 1.0f) forState:UIControlStateNormal];
         [self addSubview:majorButton];
         
-        UILabel *hobbyBorderLabel = [[UILabel alloc]init];
-        hobbyBorderLabel.frame = CGRectMake(37, 327,rectFrame.size.width-37, 38);
-        hobbyBorderLabel.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"dian"]];
-        [self addSubview:hobbyBorderLabel];
-        
-        UILabel *twoNumberLabel = [[UILabel alloc]init];
-        twoNumberLabel.frame = CGRectMake(44, 320, 10, 35.5);
-        twoNumberLabel.text = @"2";
-        twoNumberLabel.textColor = [UIColor whiteColor];
-        twoNumberLabel.backgroundColor = [UIColor clearColor];
-        [self addSubview:twoNumberLabel];
-    
-        
         hobbyButton = [[UIButton alloc]init];
-        hobbyButton.frame = CGRectMake(72, 322, rectFrame.size.width-240, 35.5);
+        hobbyButton.frame = CGRectMake(92, 440, rectFrame.size.width-240, 35.5);
         [hobbyButton setTitle:@"你的爱好" forState:UIControlStateNormal];
         [hobbyButton addTarget:self action:@selector(chooseMajorAndHobbyList:) forControlEvents:UIControlEventTouchUpInside];
-        hobbyBorderLabel.tag = 2;
+        hobbyButton.backgroundColor = [UIColor clearColor];
         hobbyButton.titleLabel.font = [UIFont boldSystemFontOfSize: 18.0];
-        [hobbyButton setTitleColor:[UIColor colorWithRed:255/255.f green:255/255.f blue:255/255.f alpha:0.7f] forState:UIControlStateNormal];
+         [hobbyButton setTitleColor:RGBACOLOR(78, 145, 192, 1.0f) forState:UIControlStateNormal];
         [self addSubview:hobbyButton];
-        
     }
     return self;
 }
@@ -109,16 +79,16 @@
                                     
                                     if (chooseButton.tag ==1) {
                                         [majorButton setTitle: loopArray[i] forState:UIControlStateNormal];
-                                        [majorButton setTitleColor:RGBACOLOR(255, 255, 255, 1.0f) forState:UIControlStateNormal];
+                                        [majorButton setTitleColor:RGBACOLOR(78, 145, 192, 1.0f) forState:UIControlStateNormal];
                                         _majorString =loopArray[i];
-                                        
-                                         NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-                                         [userDefaults setObject:_majorString forKey:@"majorDataString"];
+                                        [self getGenderAboutDustry];
                                         
                                     }else{
+                                        
                                     [hobbyButton setTitle: loopArray[i] forState:UIControlStateNormal];
-                                    [hobbyButton setTitleColor:RGBACOLOR(255, 255, 255, 1.0f) forState:UIControlStateNormal];
+                                    [hobbyButton setTitleColor:RGBACOLOR(78, 145, 192, 1.0f) forState:UIControlStateNormal];
                                         _hobbyString =loopArray[i];
+                                        [self getGenderAboutDustry];
                                     }
 
                                 }];
@@ -129,6 +99,30 @@
     
 }
 
+-(void)getGenderAboutDustry{
+
+    if (_majorString.length > 0 && _hobbyString.length > 0) {
+        
+        NSMutableDictionary *dic =[[NSMutableDictionary alloc]init];
+//        [dic setObject:@"21" forKey:@"count"];
+        
+        [Industry getGenderAndIndustryParameters:dic WithBlock:^(Industry *industry, Error *e) {
+            
+            NSString *genderString = industry.genderString;
+            NSArray *heightIndustryArray = industry.heightIndustryArray;
+            
+            NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+            [userDefaults setObject:genderString forKey:@"genderString"];
+            
+            for (int i=0; i<heightIndustryArray.count; i++) {
+                NSString *statusString = [heightIndustryArray objectAtIndex:i];
+            [userDefaults setObject:statusString forKey:@"heightIndustryString"];
+            }
+
+        }];
+    }
+
+}
 
 /*
 // Only override drawRect: if you perform custom drawing.
