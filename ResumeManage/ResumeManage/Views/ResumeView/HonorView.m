@@ -16,6 +16,11 @@
     if (self) {
         // Initialization code
         
+        UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self    action:@selector(backgroundTap)];
+        tapGestureRecognizer.numberOfTapsRequired = 1;
+        [self addGestureRecognizer: tapGestureRecognizer];
+        [tapGestureRecognizer setCancelsTouchesInView:NO];
+        
         CGRect rectFrame = [ UIScreen mainScreen ].applicationFrame;
         
         UILabel *honorTitle = [[UILabel alloc]init];
@@ -61,12 +66,19 @@
     return self;
 }
 
-- (BOOL)textViewShouldBeginEditing:(UITextView *)textView{
+- (void)textViewDidChange:(UITextView *)textView{
     
     _honorPlaceholderLabel1.text = @"";
     _honorPlaceholderLabel2.text = @"";
     _honorPlaceholderLabel3.text = @"";
-    return YES;
+
+}
+
+//关闭键盘
+- (void)backgroundTap{
+    
+    [_honorContentTextView resignFirstResponder];
+    
 }
 
 /*

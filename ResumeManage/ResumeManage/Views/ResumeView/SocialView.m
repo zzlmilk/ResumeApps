@@ -16,6 +16,12 @@
     if (self) {
         // Initialization code
         
+        UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self    action:@selector(backgroundTap)];
+        tapGestureRecognizer.numberOfTapsRequired = 1;
+        [self addGestureRecognizer: tapGestureRecognizer];
+        [tapGestureRecognizer setCancelsTouchesInView:NO];
+        
+        
         CGRect rectFrame = [ UIScreen mainScreen ].applicationFrame;
         
         //社会实践
@@ -47,11 +53,19 @@
     return self;
 }
 
-- (BOOL)textViewShouldBeginEditing:(UITextView *)textView{
+- (void)textViewDidChange:(UITextView *)textView{
     
     _socialPlaceholderLabel.text = @"";
-    return YES;
+    
 }
+
+//关闭键盘
+- (void)backgroundTap{
+    
+    [_socialContentTextView resignFirstResponder];
+    
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

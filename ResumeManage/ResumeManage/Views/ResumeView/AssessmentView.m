@@ -16,6 +16,11 @@
     if (self) {
         // Initialization code
         
+        UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self    action:@selector(backgroundTap)];
+        tapGestureRecognizer.numberOfTapsRequired = 1;
+        [self addGestureRecognizer: tapGestureRecognizer];
+        [tapGestureRecognizer setCancelsTouchesInView:NO];
+        
         CGRect rectFrame = [ UIScreen mainScreen ].applicationFrame;
         
         UILabel *assessmentTitleLabel = [[UILabel alloc]init];
@@ -43,6 +48,19 @@
         
     }
     return self;
+}
+
+- (void)textViewDidChange:(UITextView *)textView{
+    
+    _assessmentPlaceholderLabel.text = @"";
+    
+}
+
+//关闭键盘
+- (void)backgroundTap{
+    
+    [_assessmentContentTextView resignFirstResponder];
+    
 }
 
 /*

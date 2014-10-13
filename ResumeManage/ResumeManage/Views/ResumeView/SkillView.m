@@ -16,6 +16,11 @@
     if (self) {
         // Initialization code
         
+        UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self    action:@selector(backgroundTap)];
+        tapGestureRecognizer.numberOfTapsRequired = 1;
+        [self addGestureRecognizer: tapGestureRecognizer];
+        [tapGestureRecognizer setCancelsTouchesInView:NO];
+        
         CGRect rectFrame = [ UIScreen mainScreen ].applicationFrame;
         
         UILabel *skillTitleLabel = [[UILabel alloc]init];
@@ -44,6 +49,18 @@
     return self;
 }
 
+- (void)textViewDidChange:(UITextView *)textView{
+    
+    _skillPlaceholderLabel.text = @"";
+    
+}
+
+//关闭键盘
+- (void)backgroundTap{
+    
+    [_skillContentTextView resignFirstResponder];
+    
+}
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
