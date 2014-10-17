@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "REFrostedViewController.h"
+#import "SocialView.h"
+#import "HonorView.h"
+#import "ObjectiveView.h"
+#import "SkillView.h"
+#import "AssessmentView.h"
 
 @interface ResumeViewController : UIViewController<UIScrollViewDelegate,UITextFieldDelegate,UIActionSheetDelegate,UITextViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
@@ -29,8 +34,17 @@
 @property (strong, nonatomic) UITextField* phoneTextField;
 @property (strong, nonatomic) UITextField* emailTextField;
 
+@property (nonatomic,strong)SocialView *socialView;
+@property (nonatomic,strong)HonorView *honorView;
+@property (nonatomic,strong)ObjectiveView *objectiveView;
+@property (nonatomic,strong)SkillView *skillView;
+@property (nonatomic,strong)AssessmentView *assessmentView;
+
 
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *previewItem;
+
+- (IBAction)previewResumeinfo;
+
 - (IBAction)showMenu;
 
 @end

@@ -95,6 +95,7 @@
 		DFD274F019C68833002012AD /* DKImageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD274EB19C68833002012AD /* DKImageBrowser.m */; };
 		DFD274F119C68833002012AD /* DKImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD274ED19C68833002012AD /* DKImageCell.m */; };
 		DFD274F219C68833002012AD /* DKModalImageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD274EF19C68833002012AD /* DKModalImageBrowser.m */; };
+		DFD8993C19F0CAE80088AB7B /* ResumeInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD8993B19F0CAE80088AB7B /* ResumeInfo.m */; };
 		DFE2C9FD19C91F1F009D4B19 /* ApIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE2C9FC19C91F1F009D4B19 /* ApIClient.m */; };
 		DFE2CA1219C91F63009D4B19 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE2CA0019C91F63009D4B19 /* AFHTTPRequestOperation.m */; };
 		DFE2CA1319C91F63009D4B19 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE2CA0219C91F63009D4B19 /* AFHTTPRequestOperationManager.m */; };
@@ -289,6 +290,8 @@
 		DFD274ED19C68833002012AD /* DKImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKImageCell.m; sourceTree = "<group>"; };
 		DFD274EE19C68833002012AD /* DKModalImageBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKModalImageBrowser.h; sourceTree = "<group>"; };
 		DFD274EF19C68833002012AD /* DKModalImageBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKModalImageBrowser.m; sourceTree = "<group>"; };
+		DFD8993A19F0CAE80088AB7B /* ResumeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResumeInfo.h; sourceTree = "<group>"; };
+		DFD8993B19F0CAE80088AB7B /* ResumeInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResumeInfo.m; sourceTree = "<group>"; };
 		DFE2C9FB19C91F17009D4B19 /* ApIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApIClient.h; sourceTree = "<group>"; };
 		DFE2C9FC19C91F1F009D4B19 /* ApIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApIClient.m; sourceTree = "<group>"; };
 		DFE2C9FF19C91F63009D4B19 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -688,6 +691,8 @@
 		DF9402F8196B91E800411FB9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DFD8993A19F0CAE80088AB7B /* ResumeInfo.h */,
+				DFD8993B19F0CAE80088AB7B /* ResumeInfo.m */,
 				DF3A23EF19C816F700E54303 /* ResumeOld */,
 				DFE2CA1B19C92083009D4B19 /* Error.h */,
 				DFE2CA1C19C92083009D4B19 /* Error.m */,
@@ -986,6 +991,7 @@
 				DFE2CA1319C91F63009D4B19 /* AFHTTPRequestOperationManager.m in Sources */,
 				DFE2CA1A19C91F63009D4B19 /* AFURLSessionManager.m in Sources */,
 				DFB287D019D41D2E00EC7A7F /* ObjectiveView.m in Sources */,
+				DFD8993C19F0CAE80088AB7B /* ResumeInfo.m in Sources */,
 				DFE2CA3819C933F0009D4B19 /* UIButton+AFNetworking.m in Sources */,
 				DF3A23B619C7E32800E54303 /* UIImage+REFrostedViewController.m in Sources */,
 				DF3A23D219C7E8E400E54303 /* NavigationController.m in Sources */,

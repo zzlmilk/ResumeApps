@@ -7,13 +7,10 @@
 //
 
 #import "ResumeViewController.h"
-#import "SocialView.h"
-#import "HonorView.h"
-#import "ObjectiveView.h"
-#import "SkillView.h"
-#import "AssessmentView.h"
-
 #import "AHKActionSheet.h"
+#import "DefaultTempViewController.h"
+
+#import "ResumeInfo.h"
 
 
 @interface ResumeViewController ()
@@ -83,6 +80,8 @@ UITextField *editTextField;
     _nameTextField.layer.borderWidth = 1.0;
     _nameTextField.textAlignment =UIControlContentHorizontalAlignmentRight;
     _nameTextField.frame = CGRectMake(_avatarImageView.frame.origin.x+_avatarImageView.frame.size.width+15, _avatarImageView.frame.origin.y, 200, 35);
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    _nameTextField.text = [userDefaults stringForKey:@"yd_surnameString"];
     _nameTextField.placeholder = @"请输入姓名  ";
     _nameTextField.delegate = self;
     UIView *namePaddingView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 15, 40)];
@@ -242,34 +241,34 @@ UITextField *editTextField;
     
     
     //社会实践---
-    SocialView *socialView= [[SocialView alloc]init];
-    socialView.frame = CGRectMake(0, ageTitlelabel.frame.origin.y+366, self.view.frame.size.width, 160);
-    socialView.backgroundColor = [UIColor clearColor];
-    [_resumeScrollView addSubview:socialView];
+    _socialView= [[SocialView alloc]init];
+    _socialView.frame = CGRectMake(0, ageTitlelabel.frame.origin.y+366, self.view.frame.size.width, 160);
+    _socialView.backgroundColor = [UIColor clearColor];
+    [_resumeScrollView addSubview:_socialView];
     
     //获奖荣誉---
-    HonorView *honorView= [[HonorView alloc]init];
-    honorView.frame = CGRectMake(0, socialView.frame.origin.y+socialView.frame.size.height, self.view.frame.size.width, 140);
-    honorView.backgroundColor = [UIColor clearColor];
-    [_resumeScrollView addSubview:honorView];
+    _honorView= [[HonorView alloc]init];
+    _honorView.frame = CGRectMake(0, _socialView.frame.origin.y+_socialView.frame.size.height, self.view.frame.size.width, 140);
+    _honorView.backgroundColor = [UIColor clearColor];
+    [_resumeScrollView addSubview:_honorView];
     
     //求职意向---
-    ObjectiveView *objectiveView = [[ObjectiveView alloc]init];
-    objectiveView.frame = CGRectMake(0, honorView.frame.origin.y+honorView.frame.size.height, self.view.frame.size.width, 200);
-    objectiveView.backgroundColor = [UIColor clearColor];
-    [_resumeScrollView addSubview:objectiveView];
+    _objectiveView = [[ObjectiveView alloc]init];
+    _objectiveView.frame = CGRectMake(0, _honorView.frame.origin.y+_honorView.frame.size.height, self.view.frame.size.width, 200);
+    _objectiveView.backgroundColor = [UIColor clearColor];
+    [_resumeScrollView addSubview:_objectiveView];
     
     //专业技能---
-    SkillView *skillView = [[SkillView alloc]init];
-    skillView.frame = CGRectMake(0, objectiveView.frame.size.height+objectiveView.frame.origin.y-10, self.view.frame.size.width, 200);
-    skillView.backgroundColor = [UIColor clearColor];
-    [_resumeScrollView addSubview:skillView];
+    _skillView = [[SkillView alloc]init];
+    _skillView.frame = CGRectMake(0, _objectiveView.frame.size.height+_objectiveView.frame.origin.y-10, self.view.frame.size.width, 200);
+    _skillView.backgroundColor = [UIColor clearColor];
+    [_resumeScrollView addSubview:_skillView];
     
     //个人评价---
-    AssessmentView *assessmentView = [[AssessmentView alloc]init];
-    assessmentView.frame = CGRectMake(0,skillView.frame.size.height+skillView.frame.origin.y, self.view.frame.size.width, 200);
-    assessmentView.backgroundColor = [UIColor clearColor];
-    [_resumeScrollView addSubview:assessmentView];
+    _assessmentView = [[AssessmentView alloc]init];
+    _assessmentView.frame = CGRectMake(0,_skillView.frame.size.height+_skillView.frame.origin.y, self.view.frame.size.width, 200);
+    _assessmentView.backgroundColor = [UIColor clearColor];
+    [_resumeScrollView addSubview:_assessmentView];
     
 }
 
@@ -450,6 +449,7 @@ UITextField *editTextField;
     NSString *fullPath = [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:imageName];
     // 将图片写入文件
     [imageData writeToFile:fullPath atomically:NO];
+    
 }
 
 
@@ -457,6 +457,36 @@ UITextField *editTextField;
 
 {
     [self dismissViewControllerAnimated:YES completion:^{}];
+}
+
+//获取简历信息 并向Server端发送 换取html模版信息
+-(IBAction)previewResumeinfo{
+    
+    DefaultTempViewController *DefaultTempVC = [self.storyboard instantiateViewControllerWithIdentifier:@"defaultTempViewController"];
+    [self.navigationController pushViewController:DefaultTempVC animated:YES];
+    
+//    NSMutableDictionary *dic =[[NSMutableDictionary alloc]init];
+//    
+//    [dic setObject:@"13222223333" forKey:@"user_phone"];
+//    [dic setObject:@"姓名" forKey:@"user_name"];
+//    [dic setObject:@"19891001" forKey:@"user_birthday"];
+//    [dic setObject:@"1" forKey:@"user_sex"];//1,2
+//    [dic setObject:@"1" forKey:@"school_id"];
+//    [dic setObject:@"2" forKey:@"education_id"];
+//    [dic setObject:@"3" forKey:@"compensation_id"];
+//    [dic setObject:@"4" forKey:@"major_detail_id"];
+//    [dic setObject:@"专业技能" forKey:@"professional_skill"];
+//    [dic setObject:@"社会经历" forKey:@"social_practice"];
+//    [dic setObject:@"获奖荣誉" forKey:@"honor"];
+//    [dic setObject:@"个人评价" forKey:@"self_evaluation"];
+//    
+//   
+//    [ResumeInfo getHtmlResumetempParameters:dic WithBlock:^(ResumeInfo *resumeInfo, Error *e) {
+//        
+//        DefaultTempViewController *DefaultTempVC = [self.storyboard instantiateViewControllerWithIdentifier:@"defaultTempViewController"];
+//        [self.navigationController pushViewController:DefaultTempVC animated:YES];
+//        
+//    }];
 }
 
 
