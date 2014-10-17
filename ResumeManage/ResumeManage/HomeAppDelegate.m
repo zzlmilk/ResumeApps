@@ -7,6 +7,14 @@
 //
 
 #import "HomeAppDelegate.h"
+#import "DefaultTempViewController.h"
+
+
+#import <ShareSDK/ShareSDK.h>
+#import <TencentOpenAPI/QQApiInterface.h>
+#import <TencentOpenAPI/TencentOAuth.h>
+#import "WXApi.h"
+
 
 @implementation HomeAppDelegate
 
@@ -23,6 +31,25 @@
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
 
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
+    
+    
+    [ShareSDK registerApp:@"10c3b9f61bc4"];
+    
+    [ShareSDK connectWeChatWithAppId:@"wx73d4adffe3bc51da"
+                           wechatCls:[WXApi class]];
+    [ShareSDK connectMail];
+    [ShareSDK connectAirPrint];
+    
+    
+    
+    
+        [ShareSDK ssoEnabled:NO];
+    
+//    self.window.rootViewController = [[DefaultTempViewController alloc] init];
+    [self.window makeKeyAndVisible];
+    
+    //TODO: 第六步：开始使用 ShareSDK 进行分享，详见 wiki 上关于构造分享的例子。
+    
     
     return YES;
 }
