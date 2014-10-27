@@ -34,23 +34,12 @@
     
 
 
-    UIBarButtonItem *addItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:nil];
+    UIBarButtonItem *shareItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(buttonClicked:)];
     
-    self.navigationItem.rightBarButtonItem = addItem;
+    self.navigationItem.rightBarButtonItem = shareItem;
     
     
     _defultTempView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"defaultTemp"]];
-    
-    UIButton *anchorButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [anchorButton setTitle:@"开始分享！" forState:UIControlStateNormal];
-    [anchorButton sizeToFit];
-    [anchorButton addTarget:self
-                     action:@selector(buttonClicked:)
-           forControlEvents:UIControlEventTouchDown];
-
-    anchorButton.frame = CGRectMake(100, 50, 100, 100);
-    [self.view insertSubview:anchorButton atIndex:0];
-    
     
     _listTempScrollView.backgroundColor = RGBACOLOR(238, 170, 126, 0.9);
 

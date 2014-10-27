@@ -10,29 +10,29 @@
 	<string>ResumeManage</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>F0655371-515D-4DB2-BCD3-2EB00A79C817</key>
+		<key>BF2F95CAEC5D329BFAFF76E071B5485A9C1161CF</key>
 		<string>https://github.com/zzlmilk/ResumeApps.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ResumeManage/ResumeManage.xcodeproj/project.xcworkspace</string>
+	<string>ResumeManage/ResumeManage.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>F0655371-515D-4DB2-BCD3-2EB00A79C817</key>
+		<key>BF2F95CAEC5D329BFAFF76E071B5485A9C1161CF</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/zzlmilk/ResumeApps.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>F0655371-515D-4DB2-BCD3-2EB00A79C817</string>
+	<string>BF2F95CAEC5D329BFAFF76E071B5485A9C1161CF</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>F0655371-515D-4DB2-BCD3-2EB00A79C817</string>
+			<string>BF2F95CAEC5D329BFAFF76E071B5485A9C1161CF</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ResumeApps</string>
 		</dict>
