@@ -30,21 +30,21 @@
         
         GenderAboutndustryView *genderAboutndustryView = [[GenderAboutndustryView alloc]init];
         genderAboutndustryView.frame =CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
-        IntroModel *model2 = [[IntroModel alloc] initWithTitle:nil description:nil image:@"beijing2" view:genderAboutndustryView];
+        IntroModel *model2 = [[IntroModel alloc] initWithTitle:nil description:nil image:@"qiePianEr" view:genderAboutndustryView];
         
         
         EducationWorkExperienceView *educationWorkExperienceView = [[EducationWorkExperienceView alloc]init];
         educationWorkExperienceView.frame =CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
-        IntroModel *model3 = [[IntroModel alloc] initWithTitle:nil description:nil image:@"beijing3" view:educationWorkExperienceView];
+        IntroModel *model3 = [[IntroModel alloc] initWithTitle:nil description:nil image:@"yinDaoSan" view:educationWorkExperienceView];
         
         SurnameAndPhoneView *surnameAndPhoneView = [[SurnameAndPhoneView alloc]init];
         surnameAndPhoneView.frame =CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
-        IntroModel *model4 = [[IntroModel alloc] initWithTitle:nil description:nil image:@"beijing4" view:surnameAndPhoneView];
+        IntroModel *model4 = [[IntroModel alloc] initWithTitle:nil description:nil image:@"beijingSi" view:surnameAndPhoneView];
         
         TagAndPayView *tagAndPayView = [[TagAndPayView alloc]init];
         tagAndPayView.delegate = _delegate;
         tagAndPayView.frame =CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
-        IntroModel *model5 = [[IntroModel alloc] initWithTitle:nil description:nil image:@"beijing5" view:tagAndPayView];
+        IntroModel *model5 = [[IntroModel alloc] initWithTitle:nil description:nil image:@"yinDaoWu" view:tagAndPayView];
         
         IntroControll *introControll = [[IntroControll alloc] initWithFrame:self.bounds pages:@[model1, model2,model3,model4,model5]];
         [self addSubview:introControll];

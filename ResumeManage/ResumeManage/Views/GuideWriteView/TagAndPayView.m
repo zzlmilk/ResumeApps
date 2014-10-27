@@ -26,53 +26,25 @@
 //         self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"beijing5"]];
         CGRect rectFrame = [ UIScreen mainScreen ].applicationFrame;
 
-        UILabel *descriptionOneLabel = [[UILabel alloc]init];
-        descriptionOneLabel.frame = CGRectMake(25, 100, rectFrame.size.width-70, 72);
-        descriptionOneLabel.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"tishiyu5"]];
-        [self addSubview:descriptionOneLabel];
-        
-        UILabel *promptBorderLabel = [[UILabel alloc]init];
-        promptBorderLabel.frame = CGRectMake(37, 227, rectFrame.size.width-37, 38);
-        promptBorderLabel.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"dian"]];
-        [self addSubview:promptBorderLabel];
-        
-        UILabel *oneNumberLabel = [[UILabel alloc]init];
-        oneNumberLabel.frame = CGRectMake(44, 220, 10, 35.5);
-        oneNumberLabel.text = @"1";
-        oneNumberLabel.textColor = [UIColor whiteColor];
-        oneNumberLabel.backgroundColor = [UIColor clearColor];
-        [self addSubview:oneNumberLabel];
-        
         tagButton = [[UIButton alloc]init];
-        tagButton.frame = CGRectMake(72, 222, rectFrame.size.width-240, 35.5);
+        tagButton.frame = CGRectMake(90, 370, rectFrame.size.width-240, 35.5);
+        tagButton.backgroundColor = [UIColor clearColor];
         [tagButton setTitle:@"添加标签" forState:UIControlStateNormal];
         [tagButton addTarget:self action:@selector(chooseTagAndPay:) forControlEvents:UIControlEventTouchUpInside];
         tagButton.tag = 5;
         tagButton.titleLabel.font = [UIFont boldSystemFontOfSize: 18.0];
-        [tagButton setTitleColor:RGBACOLOR(255, 255, 255, 0.7f) forState:UIControlStateNormal];
+        [tagButton setTitleColor:RGBACOLOR(78, 145, 192, 1.0f) forState:UIControlStateNormal];
         [self addSubview:tagButton];
         
-        
-        UILabel *hobbyBorderLabel = [[UILabel alloc]init];
-        hobbyBorderLabel.frame = CGRectMake(37, 327,rectFrame.size.width-37, 38);
-        hobbyBorderLabel.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"dian"]];
-        [self addSubview:hobbyBorderLabel];
-        
-        UILabel *twoNumberLabel = [[UILabel alloc]init];
-        twoNumberLabel.frame = CGRectMake(44, 320, 10, 35.5);
-        twoNumberLabel.text = @"2";
-        twoNumberLabel.textColor = [UIColor whiteColor];
-        twoNumberLabel.backgroundColor = [UIColor clearColor];
-        [self addSubview:twoNumberLabel];
-        
         payButton = [[UIButton alloc]init];
-        payButton.frame = CGRectMake(72, 322, rectFrame.size.width-200, 35.5);
+        payButton.frame = CGRectMake(88, tagButton.frame.origin.y+tagButton.frame.size.height+35, rectFrame.size.width-200, 35.5);
+        payButton.backgroundColor = [UIColor clearColor];
         [payButton setTitle:@"薪资要求" forState:UIControlStateNormal];
         [payButton addTarget:self action:@selector(chooseTagAndPay:) forControlEvents:UIControlEventTouchUpInside];
         payButton.tag = 6;
         [payButton setTitleEdgeInsets:UIEdgeInsetsMake(0,-30,0,0)];
         payButton.titleLabel.font = [UIFont boldSystemFontOfSize: 18.0];
-        [payButton setTitleColor:[UIColor colorWithRed:255/255.f green:255/255.f blue:255/255.f alpha:0.7f] forState:UIControlStateNormal];
+        [payButton setTitleColor:RGBACOLOR(78, 145, 192, 1.0f) forState:UIControlStateNormal];
         [self addSubview:payButton];
         
         
@@ -126,10 +98,10 @@
                                     
                                     if (chooseButton.tag ==5) {
                                         [tagButton setTitle: loopArray[i] forState:UIControlStateNormal];
-                                        [tagButton setTitleColor:RGBACOLOR(255, 255, 255, 1.0f) forState:UIControlStateNormal];
+                                        [tagButton setTitleColor:RGBACOLOR(96,96,96,1.0f) forState:UIControlStateNormal];
                                     }else{
                                         [payButton setTitle: loopArray[i] forState:UIControlStateNormal];
-                                        [payButton setTitleColor:RGBACOLOR(255, 255, 255, 1.0f) forState:UIControlStateNormal];
+                                        [payButton setTitleColor:RGBACOLOR(96,96,96,1.0f) forState:UIControlStateNormal];
                                         
                                     }
                                     

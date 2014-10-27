@@ -39,42 +39,30 @@
         
         
         UILabel *descriptionFourLabel = [[UILabel alloc]init];
-        descriptionFourLabel.frame = CGRectMake(33, 87, rectFrame.size.width-65, 71);
-        descriptionFourLabel.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"tishi4"]];
+        descriptionFourLabel.frame = rectFrame;
+        descriptionFourLabel.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"tu"]];
         [surnamePhoneScrollView addSubview:descriptionFourLabel];
+
         
-        UILabel *surnameBorderLabel = [[UILabel alloc]init];
-        surnameBorderLabel.frame = CGRectMake(37, 226, rectFrame.size.width-37, 38);
-        surnameBorderLabel.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"dian2"]];
-        [surnamePhoneScrollView addSubview:surnameBorderLabel];
-        
-        UILabel *oneNumberLabel = [[UILabel alloc]init];
-        oneNumberLabel.frame = CGRectMake(45, 220, rectFrame.size.width-37, 38);
-        oneNumberLabel.text = @"1";
-        oneNumberLabel.textColor = [UIColor whiteColor];
-        [surnamePhoneScrollView addSubview:oneNumberLabel];
-        
-        surnameText = [[UITextField alloc] initWithFrame:CGRectMake(80, 220, 200, 38)];
+        surnameText = [[UITextField alloc] initWithFrame:CGRectMake(90, 360, 200, 38)];
         [surnameText setBorderStyle:UITextBorderStyleNone];
         surnameText.tag = 1;
         surnameText.placeholder = @"你的姓名";
         surnameText.delegate = self;
+        surnameText.backgroundColor = [UIColor clearColor];
         surnameText.textColor = [UIColor whiteColor];
-        [surnameText setValue:RGBACOLOR(255, 255, 255, 0.7f)
+        [surnameText setValue:RGBACOLOR(78, 145, 192, 1.0f)
                         forKeyPath:@"_placeholderLabel.textColor"];
         [surnamePhoneScrollView addSubview:surnameText];
         
-        UILabel *phoneBorderLabel = [[UILabel alloc]init];
-        phoneBorderLabel.frame = CGRectMake(37, 326, rectFrame.size.width-37, 38);
-        phoneBorderLabel.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"dian2"]];
-        [surnamePhoneScrollView addSubview:phoneBorderLabel];
         
-        phoneNumberText = [[UITextField alloc] initWithFrame:CGRectMake(80, rectFrame.size.width, 200, 38)];
+        phoneNumberText = [[UITextField alloc] initWithFrame:CGRectMake(90, surnameText.frame.size.height+surnameText.frame.origin.y+35, 200, 38)];
         phoneNumberText.delegate = self;
         phoneNumberText.tag = 2;
+        phoneNumberText.backgroundColor = [UIColor clearColor];
         phoneNumberText.placeholder = @"你的联系电话";
         phoneNumberText.textColor = [UIColor whiteColor];
-        [phoneNumberText setValue:RGBACOLOR(255, 255, 255, 0.7f)
+        [phoneNumberText setValue:RGBACOLOR(78, 145, 192, 1.0f)
                    forKeyPath:@"_placeholderLabel.textColor"];
         phoneNumberText.keyboardType = UIKeyboardTypeNumberPad;
         [phoneNumberText setBorderStyle:UITextBorderStyleNone];
@@ -90,14 +78,15 @@
         [surnameText setInputAccessoryView:topView];
         [phoneNumberText setInputAccessoryView:topView];
         
-        
-        UILabel *twoNumberLabel = [[UILabel alloc]init];
-        twoNumberLabel.frame = CGRectMake(45, rectFrame.size.width, rectFrame.size.width-37, 38);
-        twoNumberLabel.text = @"2";
-        twoNumberLabel.textColor = [UIColor whiteColor];
-        [surnamePhoneScrollView addSubview:twoNumberLabel];
     }
     return self;
+}
+
+//控制placeHolder的颜色、字体
+- (void)drawPlaceholderInRect:(CGRect)rect
+{
+    
+
 }
 
 

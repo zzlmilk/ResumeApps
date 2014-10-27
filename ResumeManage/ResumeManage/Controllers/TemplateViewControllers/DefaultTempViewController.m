@@ -32,6 +32,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+
+
     UIBarButtonItem *addItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:nil];
     
     self.navigationItem.rightBarButtonItem = addItem;
@@ -47,14 +49,50 @@
            forControlEvents:UIControlEventTouchDown];
 
     anchorButton.frame = CGRectMake(100, 50, 100, 100);
+    [self.view insertSubview:anchorButton atIndex:0];
     
-    [self.view addSubview:anchorButton];
+    
+    _listTempScrollView.backgroundColor = RGBACOLOR(238, 170, 126, 0.9);
+
+    _listTempScrollView.delegate = self;
+    _listTempScrollView.hidden = YES;
+    
+    
+    UISwipeGestureRecognizer *viewRecognizer;
+    viewRecognizer = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(handleSwipeFromDown)];
+    [viewRecognizer setDirection:(UISwipeGestureRecognizerDirectionDown)];
+    [self.view addGestureRecognizer:viewRecognizer];
     
 }
 
+//选择模版后 隐藏模版选项(scrollVew)
+- (IBAction)changeTemp{
+    
+    CATransition *animation = [CATransition animation];
+    
+    animation.type = kCATransitionFade;
+    animation.duration = 0.4;
+    [_listTempScrollView.layer addAnimation:animation forKey:nil];
+    
+    _listTempScrollView.hidden = YES;
+}
+
+//view 中 手势向下 显示 模版选项(scrollVew)
+-(void)handleSwipeFromDown{
+
+    CATransition *animation = [CATransition animation];
+    animation.type = kCATransitionFade;
+    animation.duration = 0.4;
+    [_listTempScrollView.layer addAnimation:animation forKey:nil];
+    
+    [_listTempScrollView setContentSize:CGSizeMake(self.view.frame.size.width, self.view.frame.size.height+30)];
+    _listTempScrollView.hidden = NO;
+
+}
 
 - (void)buttonClicked:(id)sender
 {
+    
     NSString *imagePath = [[NSBundle mainBundle] pathForResource:@"ShareSDK"  ofType:@"jpg"];
     
     //构造分享内容

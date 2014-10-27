@@ -11,6 +11,8 @@
 #import "Industry.h"
 #import "GenderAboutndustryView.h"
 
+#import "FVCustomAlertView.h"
+
 @implementation MajorAndHobbyView
 
 - (id)initWithFrame:(CGRect)frame
@@ -41,7 +43,7 @@
         [self addSubview:majorButton];
         
         hobbyButton = [[UIButton alloc]init];
-        hobbyButton.frame = CGRectMake(92, 440, rectFrame.size.width-240, 35.5);
+        hobbyButton.frame = CGRectMake(90, 440, rectFrame.size.width-240, 35.5);
         [hobbyButton setTitle:@"你的爱好" forState:UIControlStateNormal];
         [hobbyButton addTarget:self action:@selector(chooseMajorAndHobbyList:) forControlEvents:UIControlEventTouchUpInside];
         hobbyButton.backgroundColor = [UIColor clearColor];
@@ -100,6 +102,9 @@
 }
 
 -(void)getGenderAboutDustry{
+    
+    [FVCustomAlertView showDefaultLoadingAlertOnView:self withTitle:@"Loading..."];
+    //[FVCustomAlertView hideAlertFromView:self fading:YES];
 
     if (_majorString.length > 0 && _hobbyString.length > 0) {
         
