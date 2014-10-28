@@ -459,34 +459,31 @@ UITextField *editTextField;
     [self dismissViewControllerAnimated:YES completion:^{}];
 }
 
-//获取简历信息 并向Server端发送 换取html模版信息
+//获取简历信息 并向Server端发送 保存简历 换取html模版信息
 -(IBAction)previewResumeinfo{
     
-    DefaultTempViewController *DefaultTempVC = [self.storyboard instantiateViewControllerWithIdentifier:@"defaultTempViewController"];
-    [self.navigationController pushViewController:DefaultTempVC animated:YES];
+    NSMutableDictionary *dic =[[NSMutableDictionary alloc]init];
     
-//    NSMutableDictionary *dic =[[NSMutableDictionary alloc]init];
-//    
-//    [dic setObject:@"13222223333" forKey:@"user_phone"];
-//    [dic setObject:@"姓名" forKey:@"user_name"];
-//    [dic setObject:@"19891001" forKey:@"user_birthday"];
-//    [dic setObject:@"1" forKey:@"user_sex"];//1,2
-//    [dic setObject:@"1" forKey:@"school_id"];
-//    [dic setObject:@"2" forKey:@"education_id"];
-//    [dic setObject:@"3" forKey:@"compensation_id"];
-//    [dic setObject:@"4" forKey:@"major_detail_id"];
-//    [dic setObject:@"专业技能" forKey:@"professional_skill"];
-//    [dic setObject:@"社会经历" forKey:@"social_practice"];
-//    [dic setObject:@"获奖荣誉" forKey:@"honor"];
-//    [dic setObject:@"个人评价" forKey:@"self_evaluation"];
-//    
-//   
-//    [ResumeInfo getHtmlResumetempParameters:dic WithBlock:^(ResumeInfo *resumeInfo, Error *e) {
-//        
-//        DefaultTempViewController *DefaultTempVC = [self.storyboard instantiateViewControllerWithIdentifier:@"defaultTempViewController"];
-//        [self.navigationController pushViewController:DefaultTempVC animated:YES];
-//        
-//    }];
+    [dic setObject:@"13222223333" forKey:@"user_phone"];
+    [dic setObject:@"姓名" forKey:@"user_name"];
+    [dic setObject:@"19891001" forKey:@"user_birthday"];
+    [dic setObject:@"1" forKey:@"user_sex"];//1,2
+    [dic setObject:@"1" forKey:@"school_id"];
+    [dic setObject:@"2" forKey:@"education_id"];
+    [dic setObject:@"3" forKey:@"compensation_id"];
+    [dic setObject:@"4" forKey:@"major_detail_id"];
+    [dic setObject:@"专业技能" forKey:@"professional_skill"];
+    [dic setObject:@"社会经历" forKey:@"social_practice"];
+    [dic setObject:@"获奖荣誉" forKey:@"honor"];
+    [dic setObject:@"个人评价" forKey:@"self_evaluation"];
+    
+   
+    [ResumeInfo saveResumeInfoParameters:dic WithBlock:^(ResumeInfo *resumeInfo, Error *e) {
+        
+        DefaultTempViewController *DefaultTempVC = [self.storyboard instantiateViewControllerWithIdentifier:@"defaultTempViewController"];
+        [self.navigationController pushViewController:DefaultTempVC animated:YES];
+        
+    }];
 }
 
 

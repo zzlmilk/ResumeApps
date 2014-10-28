@@ -13,6 +13,6 @@
 
 -(id)initWithDic:(NSDictionary *)dic;
 
-+(NSURLSessionDataTask *)getHtmlResumetempParameters:(NSDictionary *)parameters WithBlock:(void (^)(ResumeInfo *resume, Error *e))block;
++(NSURLSessionDataTask *)saveResumeInfoParameters:(NSDictionary *)parameters WithBlock:(void (^)(ResumeInfo *resumeInfo, Error *e))block;
 
 @end

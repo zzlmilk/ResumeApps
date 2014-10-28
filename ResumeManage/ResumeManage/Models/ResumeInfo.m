@@ -21,7 +21,7 @@
 }
 
 
-+(NSURLSessionDataTask *)getHtmlResumetempParameters:(NSDictionary *)parameters WithBlock:(void (^)(ResumeInfo *resumeInfo, Error *e))block{
++(NSURLSessionDataTask *)saveResumeInfoParameters:(NSDictionary *)parameters WithBlock:(void (^)(ResumeInfo *resumeInfo, Error *e))block{
 
     return [[ApIClient shareClient]GET:@"resume_api/resume/save" parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject) {
         
