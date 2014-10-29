@@ -13,6 +13,7 @@
 @property(nonatomic,strong)IBOutlet UIView *defultTempView;
 @property(nonatomic,strong)IBOutlet UIScrollView *listTempScrollView;
 
-
 - (IBAction)changeTemp;
+
+
 @end

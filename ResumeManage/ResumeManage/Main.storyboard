@@ -158,14 +158,14 @@
                                 <action selector="showMenu" destination="m86-Vc-Ooc" id="5qt-8Y-e4m"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="预 览" id="0qB-vN-vBS">
+                        <barButtonItem key="rightBarButtonItem" title="预 览" id="ali-ki-Hf1">
                             <connections>
-                                <action selector="previewResumeinfo" destination="m86-Vc-Ooc" id="IEC-nQ-GxB"/>
+                                <action selector="previewResumeinfo" destination="m86-Vc-Ooc" id="dK6-GK-ptO"/>
+                                <segue destination="w70-xn-niV" kind="push" id="UDP-lb-9gq"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="previewItem" destination="0qB-vN-vBS" id="swh-Bt-ibo"/>
                         <outlet property="resumeScrollView" destination="KQb-KY-PJK" id="v8R-rf-fks"/>
                     </connections>
                 </viewController>
@@ -190,10 +190,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pqZ-cG-sU6">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="580"/>
+                                <rect key="frame" x="0.0" y="-6" width="320" height="580"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AcA-pg-O1J">
-                                        <rect key="frame" x="31" y="46" width="111" height="156"/>
+                                        <rect key="frame" x="29" y="100" width="111" height="156"/>
                                         <state key="normal" image="defaultTemp">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -202,9 +202,11 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <gestureRecognizers/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                     </view>
                     <navigationItem key="navigationItem" title="预 览" id="B5W-01-OQ6"/>
                     <connections>
@@ -215,6 +217,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TrB-d3-cUu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1846" y="298"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="E5H-TQ-E28">
+            <objects>
+                <viewController id="17L-JZ-Li9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MJL-8A-0wy"/>
+                        <viewControllerLayoutGuide type="bottom" id="60P-ra-McE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ort-il-biP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Rp-2Q-UhT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2224" y="307"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="xgQ-0Z-5v2">

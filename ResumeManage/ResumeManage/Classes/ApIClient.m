@@ -9,7 +9,7 @@
 #import "ApIClient.h"
 
 //static NSString *const AppBaseUrl = @"https://api.weibo.com";
-static NSString *const AppBaseUrl = @"http://192.168.0.106";
+static NSString *const AppBaseUrl = @"http://192.168.0.105";
 
 @implementation ApIClient
 

@@ -8,7 +8,6 @@
 
 #import "DefaultTempViewController.h"
 
-
 #import <ShareSDK/ShareSDK.h>
 #import <AGCommon/UIDevice+Common.h>
 
@@ -23,6 +22,8 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        
+        
     }
     return self;
 }
@@ -32,25 +33,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-
-
     UIBarButtonItem *shareItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(buttonClicked:)];
-    
     self.navigationItem.rightBarButtonItem = shareItem;
     
     
+    UIPanGestureRecognizer *panGes = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeFromDown:)];
+    [self.view addGestureRecognizer:panGes];
+    
     _defultTempView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"defaultTemp"]];
     
-    _listTempScrollView.backgroundColor = RGBACOLOR(238, 170, 126, 0.9);
+    _listTempScrollView.backgroundColor = RGBACOLOR(0, 0, 0, 0.8);
 
     _listTempScrollView.delegate = self;
     _listTempScrollView.hidden = YES;
-    
-    
-    UISwipeGestureRecognizer *viewRecognizer;
-    viewRecognizer = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(handleSwipeFromDown)];
-    [viewRecognizer setDirection:(UISwipeGestureRecognizerDirectionDown)];
-    [self.view addGestureRecognizer:viewRecognizer];
     
 }
 
@@ -67,15 +62,23 @@
 }
 
 //view 中 手势向下 显示 模版选项(scrollVew)
--(void)handleSwipeFromDown{
-
-    CATransition *animation = [CATransition animation];
-    animation.type = kCATransitionFade;
-    animation.duration = 0.4;
-    [_listTempScrollView.layer addAnimation:animation forKey:nil];
+-(void)handleSwipeFromDown:(id)sender{
     
-    [_listTempScrollView setContentSize:CGSizeMake(self.view.frame.size.width, self.view.frame.size.height+30)];
-    _listTempScrollView.hidden = NO;
+    UIPanGestureRecognizer *recognizer = (UIPanGestureRecognizer *)sender;
+    
+    CGPoint translatedPoint = [recognizer translationInView:self.view];
+    
+    if (translatedPoint.y > 0 && translatedPoint.x == 0){
+    
+        CATransition *animation = [CATransition animation];
+        animation.type = kCATransitionFade;
+        animation.duration = 0.4;
+        [_listTempScrollView.layer addAnimation:animation forKey:nil];
+        
+        [_listTempScrollView setContentSize:CGSizeMake(self.view.frame.size.width, self.view.frame.size.height+30)];
+        _listTempScrollView.hidden = NO;
+    
+    }
 
 }
 

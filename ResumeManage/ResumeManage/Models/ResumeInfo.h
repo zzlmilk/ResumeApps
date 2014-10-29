@@ -13,6 +13,7 @@
 
 -(id)initWithDic:(NSDictionary *)dic;
 
+//保存简历
 +(NSURLSessionDataTask *)saveResumeInfoParameters:(NSDictionary *)parameters WithBlock:(void (^)(ResumeInfo *resumeInfo, Error *e))block;
 
 @end
