@@ -21,6 +21,7 @@
 		040BC0311977DC9300F285CA /* UIViewController+TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BC02A1977DC9300F285CA /* UIViewController+TargetViewController.m */; };
 		040BC0371977DC9A00F285CA /* MZAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BC0341977DC9900F285CA /* MZAppearance.m */; };
 		040BC0381977DC9A00F285CA /* NSInvocation+Copy.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BC0361977DC9900F285CA /* NSInvocation+Copy.m */; };
+		DF0D08441A00981E001F0A41 /* GagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0D08431A00981E001F0A41 /* GagViewController.m */; };
 		DF1781A619D90BC00063D6F9 /* Industry.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1781A519D90BC00063D6F9 /* Industry.m */; };
 		DF18D57519CFB8D100D16212 /* ResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF18D57419CFB8D100D16212 /* ResumeViewController.m */; };
 		DF18D58019CFC3A800D16212 /* ResumeView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF18D57F19CFC3A800D16212 /* ResumeView.m */; };
@@ -279,6 +280,8 @@
 		040BC0341977DC9900F285CA /* MZAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZAppearance.m; sourceTree = "<group>"; };
 		040BC0351977DC9900F285CA /* NSInvocation+Copy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+Copy.h"; sourceTree = "<group>"; };
 		040BC0361977DC9900F285CA /* NSInvocation+Copy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+Copy.m"; sourceTree = "<group>"; };
+		DF0D08421A00981E001F0A41 /* GagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GagViewController.h; sourceTree = "<group>"; };
+		DF0D08431A00981E001F0A41 /* GagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GagViewController.m; sourceTree = "<group>"; };
 		DF1781A419D90BC00063D6F9 /* Industry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Industry.h; sourceTree = "<group>"; };
 		DF1781A519D90BC00063D6F9 /* Industry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Industry.m; sourceTree = "<group>"; };
 		DF18D57319CFB8D100D16212 /* ResumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResumeViewController.h; sourceTree = "<group>"; };
@@ -757,6 +760,8 @@
 			children = (
 				DF18D57319CFB8D100D16212 /* ResumeViewController.h */,
 				DF18D57419CFB8D100D16212 /* ResumeViewController.m */,
+				DF0D08421A00981E001F0A41 /* GagViewController.h */,
+				DF0D08431A00981E001F0A41 /* GagViewController.m */,
 			);
 			path = BranchViewControllers;
 			sourceTree = "<group>";
@@ -1669,6 +1674,7 @@
 				040BC02C1977DC9300F285CA /* MZFormSheetBackgroundWindowViewController.m in Sources */,
 				040BBFE819765A9000F285CA /* Colours.m in Sources */,
 				DF1781A619D90BC00063D6F9 /* Industry.m in Sources */,
+				DF0D08441A00981E001F0A41 /* GagViewController.m in Sources */,
 				040BC0371977DC9A00F285CA /* MZAppearance.m in Sources */,
 				DF80F553196D34F90023FCA6 /* IntroView.m in Sources */,
 				DFB287D619D41FFE00EC7A7F /* AssessmentView.m in Sources */,

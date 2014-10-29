@@ -11,6 +11,7 @@
 #import "SecondViewController.h"
 #import "UIViewController+REFrostedViewController.h"
 #import "ResumeViewController.h"
+#import "GagViewController.h"
 
 @interface MenuViewController ()
 
@@ -87,6 +88,13 @@
         {
             ResumeViewController *resumeVC = [self.storyboard instantiateViewControllerWithIdentifier:@"resumeViewController"];
             navigationController.viewControllers = @[resumeVC];
+            break;
+        }
+            
+        case 5:
+        {
+            GagViewController *gagVC = [self.storyboard instantiateViewControllerWithIdentifier:@"gagViewController"];
+            navigationController.viewControllers = @[gagVC];
             break;
         }
             
